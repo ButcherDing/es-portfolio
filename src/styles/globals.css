@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-neutral-900 text-neutral-100;
+  @apply bg-slate-800 font-normal text-neutral-100;
+}
+
+h1,
+h2 {
+  @apply font-light;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-neutral-100;
+}
+
+button {
+  @apply font-semibold;
+}
+
+html {
+  scroll-behavior: smooth;
 }
