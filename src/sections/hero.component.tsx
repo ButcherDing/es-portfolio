@@ -1,11 +1,6 @@
-
 export const Hero = () => {
   return (
     <section className="" id="hero">
-      {/* <div className="relative h-full w-full"> */}
-      {/* <div className="">
-          <Image alt="leaves" src={hero} className="absolute" />
-        </div> */}
       <div className="container mx-auto flex flex-col items-center px-4 py-8 text-center md:px-10 lg:px-32 xl:max-w-2xl">
         <h1 className="w-64 text-8xl leading-none">
           {" "}
@@ -13,7 +8,7 @@ export const Hero = () => {
           <span className="dark:text-rose-600"> Scott</span>
         </h1>
         <p className="mt-8 mb-12 px-8 text-lg">
-          {`👋 Hi, I'm an eternally curious web-developer based in London. With a mysterious backstory.`}
+          {`👋 Hi, I'm an eternally curious web-developer based in London. With an unusual backstory.`}
         </p>
         <p className="mb-6 w-80 text-stone-300">
           {" "}
@@ -33,7 +28,6 @@ export const Hero = () => {
           </a>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };
