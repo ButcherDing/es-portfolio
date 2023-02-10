@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { createTRPCRouter, protectedProcedure, publicProcedure } from "../trpc";
+import { createTRPCRouter, publicProcedure } from "../trpc";
 
 export const guestbookRouter = createTRPCRouter({
   getAll: publicProcedure.query(async ({ ctx }) => {
@@ -17,7 +17,6 @@ export const guestbookRouter = createTRPCRouter({
       console.log("error with getAll", error);
     }
   }),
-
 
   // change this to protected procedure to enforce users being authed
   postMessage: publicProcedure

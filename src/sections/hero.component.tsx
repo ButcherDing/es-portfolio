@@ -1,5 +1,3 @@
-import Image from "next/image";
-import hero from "../images/bg2.jpg";
 
 export const Hero = () => {
   return (

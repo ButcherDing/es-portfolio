@@ -2,7 +2,6 @@ import Image from "next/image";
 import harvard from "../images/harvard.png";
 import udemy from "../images/udemy.png";
 import ztm from "../images/ztm.png";
-import coursera from "../images/coursera-logo.png";
 import princeton from "../images/princeton.png";
 
 const Courses = () => {
@@ -129,7 +128,7 @@ const Courses = () => {
               </div>
 
               <div className="grid content-center gap-4">
-                <p className="text-1xl text-center font-bold font-semibold  leading-none text-rose-600  sm:text-2xl">
+                <p className="text-1xl text-center font-semibold  leading-none text-rose-600  sm:text-2xl">
                   {" "}
                   In Progress
                 </p>
