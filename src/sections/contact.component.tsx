@@ -1,6 +1,5 @@
 import GuestbookEntries from "../features/guestbook/guestbook-entries/guestbook-entries.component";
 import GuestbookForm from "../features/guestbook/guestbook-form/guestbook-form.component";
-import Guestbook from "../features/guestbook/guestbook.component";
 
 const Contact = () => {
   return (
