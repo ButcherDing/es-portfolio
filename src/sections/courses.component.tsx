@@ -1,5 +1,5 @@
 import Image from "next/image";
-import harvard from "../images/harvard-logo.png";
+import harvard from "../images/harvard.png";
 import udemy from "../images/udemy.png";
 import ztm from "../images/ztm.png";
 import coursera from "../images/coursera-logo.png";
