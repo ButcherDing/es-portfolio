@@ -1,4 +1,3 @@
-import { render } from "@headlessui/react/dist/utils/render";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import GuestbookForm from "./guestbook-form/guestbook-form.component";

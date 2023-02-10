@@ -5,7 +5,7 @@ import { api } from "../../../utils/api";
 const GuestbookForm = () => {
   const [message, setMessage] = useState("");
   const [formName, setFormName] = useState("");
-  const { data: session, status } = useSession();
+  const { data: session} = useSession();
   const utils = api.useContext();
 
   const postMessage = api.guestbook.postMessage.useMutation({
