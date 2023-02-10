@@ -18,7 +18,9 @@ export const guestbookRouter = createTRPCRouter({
     }
   }),
 
-  postMessage: protectedProcedure
+
+  // change this to protected procedure to enforce users being authed
+  postMessage: publicProcedure
     .input(
       z.object({
         name: z.string(),

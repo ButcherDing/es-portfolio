@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-800 font-normal text-neutral-100;
+  @apply bg-stone-800 font-normal text-neutral-100;
 }
 
 h1,
@@ -25,4 +25,10 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background-image: linear-gradient(to right, #292524, #292524df, #292524),
+    url("../images/bg2.jpg");
+  background-size: cover;
 }

@@ -8,22 +8,23 @@ import princeton from "../images/princeton.png";
 const Courses = () => {
   return (
     <section>
-      <div className="container mx-auto px-6 py-12">
+      <div id="courses" className="container mx-auto px-6 py-12">
         <div className="grid items-center gap-4 xl:grid-cols-5">
-          <div className="mx-auto my-8 max-w-2xl space-y-4 text-center xl:col-span-2 xl:text-left">
+          <div className="xl:col-span-1.5 mx-auto my-8 max-w-2xl space-y-4 text-center xl:text-left">
             <h2 className="text-4xl ">Courses</h2>
-            <p className="dark:text-stone-400">The sheer code of them.</p>
+            <p className="dark:text-stone-400">My learning stack.</p>
           </div>
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="grid content-center gap-4">
-                <p className="text-center text-2xl  leading-none underline sm:text-2xl">
+                <p className="text-center  text-2xl font-bold   leading-none">
+                  {" "}
                   Complete
                 </p>
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-1xl sm:text-1xl  leading-none">
+                      <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Harvard
                         <span className="dark:text-rose-600"> CS50</span>
@@ -48,7 +49,7 @@ const Courses = () => {
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-1xl sm:text-1xl  leading-none">
+                      <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Complete
                         <span className="dark:text-rose-600">
@@ -77,7 +78,7 @@ const Courses = () => {
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-1xl sm:text-1xl  leading-none">
+                      <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Responsive
                         <span className="dark:text-rose-600">
@@ -104,7 +105,7 @@ const Courses = () => {
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="sm:text-1xl text-1xl  leading-none">
+                      <p className=" text-1xl font-bold leading-none">
                         Complete React
                         <span className="dark:text-rose-600"> React</span>{" "}
                         Developer in 2023
@@ -127,15 +128,15 @@ const Courses = () => {
                 </div>
               </div>
 
-              {/* SECOND COLUMN: IN PROGRESS */}
               <div className="grid content-center gap-4">
-                <p className="text-center text-2xl  leading-none text-rose-600 underline sm:text-2xl">
+                <p className="text-1xl text-center font-bold font-semibold  leading-none text-rose-600  sm:text-2xl">
+                  {" "}
                   In Progress
                 </p>
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-1xl sm:text-1xl  leading-none">
+                      <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Princeton{" "}
                         <span className="dark:text-rose-600">
@@ -165,7 +166,7 @@ const Courses = () => {
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-1xl sm:text-1xl  leading-none">
+                      <p className="text-1xl font-bold  leading-none">
                         Testing with{" "}
                         <span className="dark:text-rose-600"> Jest</span> and{" "}
                         <span className="dark:text-rose-600">
@@ -193,7 +194,7 @@ const Courses = () => {
                 <div className="rounded p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-1xl sm:text-1xl  leading-none">
+                      <p className="text-1xl font-bold  leading-none">
                         <span className="dark:text-rose-600"> NodeJS</span> The
                         Complete Guide
                       </p>

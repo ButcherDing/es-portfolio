@@ -2,10 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-    fontFamily: {
-      montserrat: ["montserrat"],
-      roboto: ["roboto"],
+    extend: {
+      backgroundImage: {
+        hero: "url('/images/bg2.jpg')",
+      },
+      fontFamily: {
+        montserrat: ["montserrat"],
+        roboto: ["roboto"],
+      },
     },
   },
   plugins: [],

@@ -4,9 +4,10 @@ import { api } from "../../../utils/api";
 
 const GuestbookForm = () => {
   const [message, setMessage] = useState("");
+  const [formName, setFormName] = useState("");
   const { data: session, status } = useSession();
-
   const utils = api.useContext();
+
   const postMessage = api.guestbook.postMessage.useMutation({
     onMutate: async (newEntry) => {
       await utils.guestbook.getAll.cancel();
@@ -23,15 +24,15 @@ const GuestbookForm = () => {
     },
   });
 
-  if (status !== "authenticated") return null;
+  if (session) setFormName(session.user?.name as string);
 
   return (
     <form
-      className="flex gap-2"
+      className="flex flex-col gap-4"
       onSubmit={(event) => {
         event.preventDefault();
         postMessage.mutate({
-          name: session.user?.name as string,
+          name: formName,
           message,
         });
         setMessage("");
@@ -39,18 +40,29 @@ const GuestbookForm = () => {
     >
       <input
         type="text"
-        className="rounded-md border-2 border-zinc-800 bg-neutral-900 px-4 py-2 focus:outline-none"
-        placeholder="your message..."
+        className="rounded-md border-2 border-stone-800 bg-stone-700 px-4 py-3 focus:outline-none"
+        placeholder="Nickname"
+        minLength={2}
+        maxLength={30}
+        value={formName}
+        onChange={(event) => setFormName(event.target.value)}
+      />
+
+      <input
+        type="text"
+        className="rounded-md border-2 border-stone-800 bg-stone-700 px-4 py-3 focus:outline-none"
+        placeholder="Message"
         minLength={2}
         maxLength={100}
         value={message}
         onChange={(event) => setMessage(event.target.value)}
       />
+
       <button
         type="submit"
-        className="rounded-md border-2 border-zinc-800 p-2 focus:outline-none"
+        className="text-s w-1/2 self-center rounded p-3 uppercase tracking-wide dark:bg-rose-600 dark:text-stone-900"
       >
-        Submit
+        Sign Guestbook
       </button>
     </form>
   );

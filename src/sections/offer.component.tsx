@@ -1,20 +1,20 @@
 const Offer = () => {
   return (
-    <section className="py-8">
+    <section id="offer" className="pt-16">
       <div className="container mx-auto">
         <div className="mx-auto p-4 text-center md:px-10 lg:px-32 xl:max-w-3xl">
           <h2 className="text-2xl  leading-none sm:text-4xl">
             What I can offer
           </h2>
-          <p className="my-4 px-8">
-            I may be a new dev, but what actually matters: an arbitrary number
-            of years of experience, or what a person can <strong>do</strong>,
-            the value they can provide, and their potential?
+          <p className="my-4 px-8 text-stone-400">
+            I may be new, but ultimately what matters is what a person can{" "}
+            <strong>do</strong>, the value they can provide, and their
+            potential.
           </p>
         </div>
         <div className="grid grid-cols-4 p-4 md:p-8">
-          <div className="col-span-full grid gap-12 py-4 text-center sm:grid-cols-2 md:col-span-4 md:text-left">
-            <div className="flex flex-col items-center justify-center space-y-3 md:items-start md:justify-start">
+          <div className="col-span-full grid gap-12 p-12 sm:grid-cols-2 md:text-left">
+            <div className="flex flex-col gap-2">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -29,22 +29,22 @@ const Offer = () => {
                   d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
                 ></path>
               </svg>
-              <h5 className="text-xl ">Frontend Expertise</h5>
+              <h5 className="text-xl ">Frontend Focus</h5>
               <p>
                 I produce clean, well-architected, organised code and am skilled
-                with various state-management solutions. Have a look at{" "}
+                with various state-management solutions in React. Have a look at{" "}
                 <a
                   className="dark:text-rose-600"
                   href="https://ines-chuaqui-preview.netlify.app/"
                 >
                   this project
                 </a>{" "}
-                for a fully-functional e-commerce React redux app using Styled
+                for a fully-functional e-commerce React Redux app using Styled
                 Components, including Auth, Stripe, Firebase integration and
                 more.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:items-start md:justify-start">
+            <div className=" flex flex-col gap-2">
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -59,7 +59,7 @@ const Offer = () => {
                   d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
                 ></path>
               </svg>
-              <h5 className="text-xl ">Communication / Team Collaboration</h5>
+              <h5 className="text-xl ">Communication / Project Work</h5>
               <p>
                 As a former language teacher and environmental social scientist,
                 I have excellent written and verbal communication skills with
@@ -81,7 +81,7 @@ const Offer = () => {
                 </a>
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:items-start md:justify-start">
+            <div className="flex flex-col gap-2">
               <div className="flex flex-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ const Offer = () => {
                 .
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-3 md:items-start md:justify-start">
+            <div className="flex flex-col gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -147,13 +147,13 @@ const Offer = () => {
                 />
               </svg>
 
-              <h5 className="text-xl ">Initiative</h5>
+              <h5 className="text-xl ">Adaptability</h5>
               <p>
                 I am adaptable, highly motivated, and a self-starter. I am a
                 quick study. I learned everything I know about
                 coding/development in 7 months of self-teaching. Imagine how
-                much more I can learn and do for your organization in 3, 6, 12
-                months or more?
+                much I can learn and do for your organization in 3, 6, 12 months
+                or more?
               </p>
             </div>
           </div>
