@@ -26,7 +26,7 @@ const Projects = () => {
             alt="Website Design System"
             className="h-64 w-full rounded object-contain dark:bg-stone-700 sm:h-96 lg:col-span-7"
           />
-          <div className="flex flex-col justify-between space-y-2 p-6 lg:col-span-5">
+          <div className="flex flex-col justify-between gap-5 space-y-2 p-6 lg:col-span-5">
             <div>
               <h3 className="text-2xl  group-hover:underline group-focus:underline sm:text-3xl">
                 Artist e-commerce & portfolio website
@@ -37,9 +37,9 @@ const Projects = () => {
               <p>
                 I designed and built this single page app for a Vancouver
                 artist, to facilitate the sale of prints and present her work.
-                Custom-built components with Styled Components,
-                minimalist-yet-robust state-management with React redux Toolkit.
-                Custom Stripe integration for payments.
+                Components from scratch with Styled Components,
+                minimalist-yet-robust state management with React Redux Toolkit
+                (RTK). Custom Stripe integration for payments.
               </p>
             </div>
 

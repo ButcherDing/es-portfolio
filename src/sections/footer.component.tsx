@@ -10,14 +10,31 @@ const Footer = () => {
             <li>Projects</li>
           </a>
           <a href="#contact">
-            <li>Contact</li>
+            <li>Courses</li>
           </a>
           <a href="#guestbook">
-            <li>Guestbook</li>
+            <li>Contact</li>
           </a>
         </ul>
         <div className="flex flex-col justify-center pt-6 lg:pt-0">
-          <div className="flex justify-center space-x-4"></div>
+          <div className="space-x-4 text-lg text-stone-500">
+            <p>
+              Built with &nbsp;
+              <a
+                className="text-stone-400 underline  hover:text-blue-800"
+                href="https://nextjs.org/"
+              >
+                NextJS
+              </a>
+              &nbsp;and&nbsp;
+              <a
+                className="text-stone-400 underline  hover:text-blue-800"
+                href="https://create.t3.gg/"
+              >
+                create-t3-app
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
