@@ -1,4 +1,4 @@
-const Tech = () => {
+export const Tech = () => {
   return (
     <section id="tech">
       <div className="mx-auto p-4 text-center md:px-10 lg:px-32 xl:max-w-3xl">

@@ -1,5 +1,3 @@
-import Tech from "./tech.component";
-
 const Offer = () => {
   return (
     <section id="offer" className="pt-16">
