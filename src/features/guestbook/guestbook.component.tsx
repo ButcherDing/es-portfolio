@@ -27,7 +27,7 @@ const Guestbook = () => {
               <p className="mb-4 text-center">hi {session.user?.name}</p>
               <button
                 type="button"
-                className="mx-auto block rounded-md bg-neutral-800 py-3"
+                className="-md mx-auto block bg-neutral-800 py-3"
                 onClick={() => {
                   signOut().catch(console.log);
                 }}
@@ -41,7 +41,7 @@ const Guestbook = () => {
             </>
           ) : (
             <button
-              className="mx-auto block rounded-md bg-neutral-800 py-3"
+              className="-md mx-auto block bg-neutral-800 py-3"
               onClick={() => {
                 signIn("discord").catch(console.log);
               }}

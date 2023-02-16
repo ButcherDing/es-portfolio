@@ -5,7 +5,7 @@ import { api } from "../../../utils/api";
 const GuestbookForm = () => {
   const [message, setMessage] = useState("");
   const [formName, setFormName] = useState("");
-  const { data: session} = useSession();
+  const { data: session } = useSession();
   const utils = api.useContext();
 
   const postMessage = api.guestbook.postMessage.useMutation({
@@ -40,7 +40,7 @@ const GuestbookForm = () => {
     >
       <input
         type="text"
-        className="rounded-md border-2 border-stone-800 bg-stone-700 px-4 py-3 focus:outline-none"
+        className="-md border-2 border-stone-800 bg-stone-700 px-4 py-3 focus:outline-none"
         placeholder="Nickname"
         minLength={2}
         maxLength={30}
@@ -50,7 +50,7 @@ const GuestbookForm = () => {
 
       <input
         type="text"
-        className="rounded-md border-2 border-stone-800 bg-stone-700 px-4 py-3 focus:outline-none"
+        className="-md border-2 border-stone-800 bg-stone-700 px-4 py-3 focus:outline-none"
         placeholder="Message"
         minLength={2}
         maxLength={100}
@@ -60,7 +60,7 @@ const GuestbookForm = () => {
 
       <button
         type="submit"
-        className="text-s w-1/2 self-center rounded p-3 uppercase tracking-wide dark:bg-rose-600 dark:text-stone-900"
+        className="text-s w-1/2 self-center  p-3 uppercase tracking-wide dark:bg-rose-600 dark:text-stone-900"
       >
         Sign Guestbook
       </button>

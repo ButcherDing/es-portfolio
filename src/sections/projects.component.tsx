@@ -9,67 +9,138 @@ const Projects = () => {
   return (
     <section className="pt-10" id="projects">
       <div className="container m-auto mb-8 mt-4 max-w-6xl space-y-6 p-6 align-middle sm:space-y-12">
-        <h1 className="text-center  leading-none sm:text-5xl">
+        <h1 className="text-center  text-4xl leading-none lg:text-5xl">
           {" "}
-          Main
-          <span className="dark:text-rose-600"> Projects</span>
+          Featured
+          <span className="dark:text-rose-600"> Project</span>
         </h1>
-        <a
-          rel="noopener noreferrer"
-          href="https://ines-chuaqui-preview.netlify.app/"
-          className="group mx-auto block max-w-sm gap-3 hover:no-underline focus:no-underline dark:bg-stone-900 sm:max-w-full lg:grid lg:grid-cols-12"
-        >
+        <div className="group mx-auto block max-w-sm gap-3  hover:no-underline focus:no-underline dark:bg-stone-900 sm:max-w-full lg:grid lg:grid-cols-12">
           <Image
             src={ic_gallery}
             width={1472}
             height={835}
             alt="Website Design System"
-            className="h-64 w-full rounded object-contain dark:bg-stone-700 sm:h-96 lg:col-span-7"
+            className="h-50  object-contain dark:bg-stone-700 sm:h-96 lg:col-span-6"
           />
-          <div className="flex flex-col justify-between gap-5 space-y-2 p-6 lg:col-span-5">
+          <div className="flex flex-col justify-between gap-5 space-y-2 p-6 lg:col-span-6 ">
             <div>
               <h3 className="text-2xl  group-hover:underline group-focus:underline sm:text-3xl">
-                Artist e-commerce & portfolio website
+                {`Ines Chuaqui`}
               </h3>
               <span className="text-xs dark:text-stone-400">
-                Freelance Project - Preview
+                Freelance e-commerce/portfolio app
               </span>
               <p>
-                I designed and built this single page app for a Vancouver
-                artist, to facilitate the sale of prints and present her work.
-                Components from scratch with Styled Components,
-                minimalist-yet-robust state management with React Redux Toolkit
-                (RTK). Custom Stripe integration for payments.
+                Freelance work for a Vancouver artist to facilitate sale of
+                prints and present her work. Main features: lightbox gallery,
+                login/auth, cart, custom payment (Stripe). Backend with Firebase
+                / Netlify serverless functions. Components from scratch with
+                Styled Components, minimalist-yet-robust state management with
+                React Redux Toolkit (RTK).
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+            <div className="flex justify-around gap-5 ">
+              <button className="flex w-40 items-center justify-around border py-3 dark:border-stone-700 dark:text-stone-50">
+                Source
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                  href="https://ines-chuaqui-preview.netlify.app/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ionicon w-7"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Code Slash</title>
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="32"
+                      d="M160 368L32 256l128-112M352 368l128-112-128-112M304 96l-96 320"
+                    />
+                  </svg>
+                </a>
+              </button>
+              <button className=" flex w-40 items-center justify-around border py-3 dark:border-stone-700 dark:text-stone-50">
+                {" "}
+                Live
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ines-chuaqui-preview.netlify.app/"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ionicon w-7"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Globe</title>
+                    <path
+                      d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                      strokeWidth="32"
+                    />
+                    <path
+                      d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                      strokeWidth="32"
+                    />
+                    <path
+                      d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="32"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                      strokeWidth="32"
+                      d="M256 48v416M464 256H48"
+                    />
+                  </svg>
+                </a>
+              </button>
+            </div>
+
+            {/* <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                 React Redux Toolkit
               </span>
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                 Typescript
               </span>
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                 Styled Components
               </span>
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                 Firebase
               </span>
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                 Netlify
               </span>
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Serverless
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                Serverless Functions
               </span>
-              <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                 Jest / React Testing Library
               </span>
-            </div>
+            </div> */}
           </div>
-        </a>
+        </div>
 
-        <h1 className="text-center   leading-none sm:text-5xl">
+        <h1 className="text-center   text-4xl leading-none lg:text-5xl">
           <span className="dark:text-rose-600"> Personal</span> Projects
         </h1>
         <div className="grid grid-cols-1 justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -84,7 +155,7 @@ const Projects = () => {
               width={480}
               height={360}
               alt="Recipe Website"
-              className="h-44 w-full rounded object-contain dark:bg-stone-700"
+              className="h-44 w-full  object-contain dark:bg-stone-700"
             />
 
             <div className="flex flex-auto flex-col justify-between gap-16 p-6">
@@ -93,28 +164,28 @@ const Projects = () => {
                   Crown Clothing
                 </h3>
                 <span className="text-xs dark:text-stone-400">
-                  Zero-to-Mastery Course
+                  Single Page E-commerce React App
                 </span>
                 <p>
-                  E-commerce app from Zero-To-Mastery exploring hooks,
-                  state-management options, and Typescript in React. Used
-                  Firebase and Stripe (albeit in minimal fashion).
+                  E-commerce app I created as part of Zero-To-Mastery course on
+                  React. I explored hooks, state-management options, and
+                  Typescript in React. Used Firebase and Stripe (minimally).
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                  React Hooks
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                  React
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Context / Hooks
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Thunks
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Sagas
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Microservices
                 </span>
               </div>
@@ -131,7 +202,7 @@ const Projects = () => {
               width={480}
               height={360}
               alt="Food Website"
-              className="h-44 w-full rounded object-contain dark:bg-stone-700"
+              className="h-44 w-full  object-contain dark:bg-stone-700"
             />
             <div className="flex flex-auto flex-col justify-between gap-16 p-6">
               <div>
@@ -139,27 +210,27 @@ const Projects = () => {
                   Omnifood
                 </h3>
                 <span className="text-xs dark:text-stone-400">
-                  Udemy Course Project
+                  Landing Page
                 </span>
                 <p>
-                  Fully responsive static landing page as part of a Udemy course
-                  on CSS/HTML. Custom styles using CSS flex, grid. On the course
-                  I created and followed a design system, applied design
-                  fundamentals including typography, color theory, and
+                  Fully responsive static landing page I built as part of a
+                  Udemy course on CSS/HTML. Custom styles using CSS flex, grid.
+                  On the course I created and followed a design system, applied
+                  design fundamentals including typography, color theory, and
                   accessibility.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   HTML
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   CSS
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Design
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Accessibility
                 </span>
               </div>
@@ -176,7 +247,7 @@ const Projects = () => {
               width={480}
               height={360}
               alt="Recipe Website"
-              className="h-44 w-full rounded object-contain dark:bg-stone-700"
+              className="h-44 w-full  object-contain dark:bg-stone-700"
             />
 
             <div className="flex flex-auto flex-col justify-between gap-16 p-6">
@@ -185,7 +256,7 @@ const Projects = () => {
                   Forkify
                 </h3>
                 <span className="text-xs dark:text-stone-400">
-                  Udemy Course Project
+                  Recipe Search App
                 </span>
                 <p>
                   Recipe searching/bookmarking app as part of Udemy course on
@@ -193,13 +264,13 @@ const Projects = () => {
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Vanilla JS
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   MVC Architecture
                 </span>
-                <span className="inline-block whitespace-nowrap rounded bg-slate-500 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
+                <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
                   Rest API
                 </span>
               </div>
@@ -207,7 +278,7 @@ const Projects = () => {
           </a>
         </div>
         <div className="flex justify-center">
-          {/* <button className="rounded-md px-6 py-3 text-sm hover:underline dark:bg-stone-900 dark:text-stone-400">
+          {/* <button className="-md px-6 py-3 text-sm hover:underline dark:bg-stone-900 dark:text-stone-400">
             Load more posts...
           </button> */}
         </div>

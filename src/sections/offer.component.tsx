@@ -1,19 +1,14 @@
+import Tech from "./tech.component";
+
 const Offer = () => {
   return (
     <section id="offer" className="pt-16">
       <div className="container mx-auto">
-        <div className="mx-auto p-4 text-center md:px-10 lg:px-32 xl:max-w-3xl">
-          <h2 className="text-2xl  leading-none sm:text-4xl">
-            What I can offer
+        <div className="container grid grid-cols-4 justify-items-center p-4 md:p-8">
+          <h2 className="col-span-4 text-center text-2xl  leading-none sm:text-4xl">
+            What I Offer
           </h2>
-          <p className="my-4 px-8 text-stone-400">
-            I may be new, but ultimately what matters is what a person can{" "}
-            <strong>do</strong>, the value they can provide, and their
-            potential.
-          </p>
-        </div>
-        <div className="grid grid-cols-4 p-4 md:p-8">
-          <div className="col-span-full grid gap-12 p-12 sm:grid-cols-2 md:text-left">
+          <div className="col-span-full grid max-w-5xl gap-x-24 gap-y-12 p-12 sm:grid-cols-2 md:text-left">
             <div className="flex flex-col gap-2">
               <svg
                 fill="none"
@@ -34,6 +29,8 @@ const Offer = () => {
                 I produce clean, well-architected, organised code and am skilled
                 with various state-management solutions in React. Have a look at{" "}
                 <a
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="dark:text-rose-600"
                   href="https://ines-chuaqui-preview.netlify.app/"
                 >
@@ -67,6 +64,8 @@ const Offer = () => {
                 successfully managing, collaborating, and delivering on complex
                 projects in my previous careers. Examples at{" "}
                 <a
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="h-6 w-6 dark:text-rose-600"
                   href="https://www.forestresearch.gov.uk/research/public-perceptions-of-urban-trees/"
                 >
@@ -74,6 +73,8 @@ const Offer = () => {
                 </a>{" "}
                 and{" "}
                 <a
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="h-6 w-6 dark:text-rose-600"
                   href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219607"
                 >

@@ -20,7 +20,7 @@ const Courses = () => {
                   {" "}
                   Complete
                 </p>
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
@@ -36,7 +36,7 @@ const Courses = () => {
                       src={harvard}
                       alt=""
                       width={150}
-                      className="h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>
@@ -45,7 +45,7 @@ const Courses = () => {
                   </p>
                 </div>
 
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
@@ -65,7 +65,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>
@@ -74,7 +74,7 @@ const Courses = () => {
                     fundamentals.
                   </p>
                 </div>
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
@@ -93,7 +93,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>
@@ -101,7 +101,7 @@ const Courses = () => {
                     fundamentals such as color theory and typography.
                   </p>
                 </div>
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className=" text-1xl font-bold leading-none">
@@ -117,7 +117,7 @@ const Courses = () => {
                       src={ztm}
                       alt=""
                       width={150}
-                      className="h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>
@@ -132,7 +132,7 @@ const Courses = () => {
                   {" "}
                   In Progress
                 </p>
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
@@ -152,7 +152,7 @@ const Courses = () => {
                       src={princeton}
                       alt=""
                       width={100}
-                      className="mb- h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="mb- -full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>
@@ -162,7 +162,7 @@ const Courses = () => {
                     string-processing algorithms.
                   </p>
                 </div>
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
@@ -181,7 +181,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>
@@ -190,7 +190,7 @@ const Courses = () => {
                   </p>
                 </div>
 
-                <div className="rounded p-6 shadow-md dark:bg-stone-900">
+                <div className=" p-6 shadow-md dark:bg-stone-900">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
@@ -205,7 +205,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="h-12 w-12 rounded-full bg-cover bg-center dark:bg-stone-500"
+                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
                     />
                   </div>
                   <p>

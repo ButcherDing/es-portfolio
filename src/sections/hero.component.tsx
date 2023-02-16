@@ -7,23 +7,39 @@ export const Hero = () => {
           Evon
           <span className="dark:text-rose-600"> Scott</span>
         </h1>
-        <p className="mt-8 mb-12 px-8 text-lg">
-          {`👋 Hi, I'm an eternally curious web-developer based in London. With an unusual backstory.`}
-        </p>
-        <p className="mb-6 w-80 text-stone-300">
+        <p className="mt-8 text-stone-300">
           {" "}
-          Javascript, HTML, CSS | Typescript | Node.js | React | Next.js | Jest
-          & RTL{" "}
+          HTML | CSS | JavaScript | TypeScript | Node.js
         </p>
-        <div className="flex flex-wrap justify-center">
-          <a href="#contact">
-            <button className="m-2 rounded px-8 py-3 text-lg dark:bg-rose-600 dark:text-stone-900">
-              Hire me
+        <p className="mt-8 mb-12 px-8 text-lg">
+          {`👋 Hi, I'm a front-end focused web developer with an insatiable curiosity. And an interesting backstory. 
+          
+  `}
+        </p>
+
+        <p>
+          {`In a hurry? Look at `}
+          <a
+            href="https://ines-chuaqui-preview.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-rose-500"
+          >
+            <u>this project</u>
+          </a>
+          {` `}
+          for an example of my work.
+        </p>
+        <div className="mt-10 flex flex-wrap justify-center">
+          <a href="#offer" rel="">
+            <button className="m-2 w-40  px-8 py-3 text-lg dark:bg-rose-600 dark:text-stone-900">
+              Learn More
             </button>
           </a>
-          <a href="#offer">
-            <button className="m-2 rounded border px-8 py-3 text-lg dark:border-stone-700 dark:text-stone-50">
-              Learn more
+
+          <a href="#contact">
+            <button className="m-2 w-40 border  px-8 py-3 text-lg dark:border-stone-500 dark:text-stone-50">
+              Hire Me
             </button>
           </a>
         </div>

@@ -21,6 +21,8 @@ const Footer = () => {
             <p>
               Built with &nbsp;
               <a
+                rel="noopener noreferrer"
+                target="_blank"
                 className="text-stone-400 underline  hover:text-blue-800"
                 href="https://nextjs.org/"
               >
@@ -28,6 +30,8 @@ const Footer = () => {
               </a>
               &nbsp;and&nbsp;
               <a
+                rel="noopener noreferrer"
+                target="_blank"
                 className="text-stone-400 underline  hover:text-blue-800"
                 href="https://create.t3.gg/"
               >
