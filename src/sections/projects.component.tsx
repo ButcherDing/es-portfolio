@@ -40,7 +40,7 @@ const Projects = () => {
               </p>
             </div>
 
-            <div className="flex justify-around gap-5 ">
+            <div className="flex justify-around gap-5 lg:justify-between ">
               <button className="flex w-40 items-center justify-around border py-3 dark:border-stone-700 dark:text-stone-50">
                 Source
                 <a

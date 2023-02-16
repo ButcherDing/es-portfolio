@@ -1,4 +1,5 @@
 import { type NextPage } from "next";
+import About from "../sections/about.component";
 import Contact from "../sections/contact.component";
 import Courses from "../sections/courses.component";
 import Footer from "../sections/footer.component";
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
       {/* <div className="hero-gradient"> */}
       <Hero />
       {/* </div> */}
-
+      <About />
       <Offer />
       <Tech />
       <Projects />
