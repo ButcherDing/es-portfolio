@@ -8,7 +8,7 @@ const About = () => {
   };
 
   return (
-    <section className="m-auto w-3/4 max-w-lg pt-24 pb-40">
+    <section id="about" className="m-auto w-3/4 max-w-lg pt-24 pb-40">
       <h2 className="pb-5 text-3xl">About Me</h2>
       <div
         onClick={handleClick}

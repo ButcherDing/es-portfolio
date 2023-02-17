@@ -21,7 +21,7 @@ const Header = () => {
           <li className="flex">
             <a
               rel="noopener noreferrer"
-              href="#offer"
+              href="#about"
               className="flex items-center border-b-2 border-transparent px-4  py-1 hover:border-rose-600   hover:text-rose-600"
             >
               About

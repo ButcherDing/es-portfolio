@@ -5,7 +5,7 @@ const Dropdown = () => {
         <li className="flex">
           <a
             rel="noopener noreferrer"
-            href="#offer"
+            href="#about"
             className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
             About
