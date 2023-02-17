@@ -6,12 +6,12 @@ const Contact = () => {
     <div>
       <div
         id="contact"
-        className="-lg mx-auto grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32"
+        className="mx-auto grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 md:grid-cols-2 md:px-12 lg:px-16 xl:px-32"
       >
         <div className="flex flex-col justify-between gap-2">
           <div className="space-y-2">
             <h2 className="text-4xl font-thin leading-tight lg:text-5xl">{`Let's talk!`}</h2>
-            <div className="max-w-xs pb-3 dark:text-stone-400">
+            <div className="max-w-xs pb-3  text-stone-400">
               Get in touch to chat about work, coding, or just sign the
               guestbook.
             </div>
@@ -20,7 +20,7 @@ const Contact = () => {
                 href="mailto:evon.scott@gmail.com"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="-full flex h-8 w-8 items-center justify-center dark:bg-rose-600 dark:text-stone-900 sm:h-10 sm:w-10"
+                className="-full flex h-8 w-8 items-center justify-center  bg-rose-600  text-stone-900 sm:h-10 sm:w-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 target="_blank"
                 href="https://github.com/ButcherDing"
-                className="-full flex h-8 w-8 items-center justify-center dark:bg-rose-600 dark:text-stone-900 sm:h-10 sm:w-10"
+                className="-full flex h-8 w-8 items-center justify-center  bg-rose-600  text-stone-900 sm:h-10 sm:w-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ const Contact = () => {
               <a
                 rel="noopener noreferrer"
                 href="#"
-                className="-full flex h-8 w-8 items-center justify-center dark:bg-rose-600 dark:text-stone-900 sm:h-10 sm:w-10"
+                className="-full flex h-8 w-8 items-center justify-center  bg-rose-600  text-stone-900 sm:h-10 sm:w-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +93,10 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="">
-          <GuestbookForm />
+        <div className="mt-8">
+          <h3 className="text-center text-xl">Guestbook</h3>
           <GuestbookEntries />
+          <GuestbookForm />
         </div>
       </div>
     </div>

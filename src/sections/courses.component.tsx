@@ -11,24 +11,24 @@ const Courses = () => {
         <div className="grid items-center gap-4 xl:grid-cols-5">
           <div className="xl:col-span-1.5 mx-auto my-8 max-w-2xl space-y-4 text-center xl:text-left">
             <h2 className="text-4xl ">Courses</h2>
-            <p className="dark:text-stone-400">My learning stack.</p>
+            <p className=" text-stone-400">My learning stack.</p>
           </div>
-          <div className="p-6 xl:col-span-3">
+          <div className="md:p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="grid content-center gap-4">
                 <p className="text-center  text-2xl font-bold   leading-none">
                   {" "}
                   Complete
                 </p>
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Harvard
-                        <span className="dark:text-rose-600"> CS50</span>
+                        <span className=" text-rose-600"> CS50</span>
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Introduction to Computer Science - EdX
                       </p>
                     </div>
@@ -36,28 +36,25 @@ const Courses = () => {
                       src={harvard}
                       alt=""
                       width={150}
-                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="-full ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
-                    World-class introductory course on computer-science
-                    fundamentals. Practical coding exercises in C.
+                    World-class introductory computer science course. Practical
+                    coding exercises in C.
                   </p>
                 </div>
 
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Complete
-                        <span className="dark:text-rose-600">
-                          {" "}
-                          Javascript
-                        </span>{" "}
-                        in 2023
+                        <span className=" text-rose-600"> Javascript</span> in
+                        2023
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Udemy - Jonas Schmedtmann
                       </p>
                     </div>
@@ -65,7 +62,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="-full ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
@@ -74,18 +71,15 @@ const Courses = () => {
                     fundamentals.
                   </p>
                 </div>
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Responsive
-                        <span className="dark:text-rose-600">
-                          {" "}
-                          HTML and CSS
-                        </span>
+                        <span className=" text-rose-600"> HTML and CSS</span>
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Udemy - Jonas Schmedtmann
                       </p>
                     </div>
@@ -93,7 +87,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="-full ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
@@ -101,15 +95,15 @@ const Courses = () => {
                     fundamentals such as color theory and typography.
                   </p>
                 </div>
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className=" text-1xl font-bold leading-none">
                         Complete React
-                        <span className="dark:text-rose-600"> React</span>{" "}
-                        Developer in 2023
+                        <span className=" text-rose-600"> React</span> Developer
+                        in 2023
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Zero To Mastery - Yihua Zhang
                       </p>
                     </div>
@@ -117,34 +111,31 @@ const Courses = () => {
                       src={ztm}
                       alt=""
                       width={150}
-                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="  ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
-                    Covered grid, flexbox, responsive design, as well as design
-                    fundamentals such as color theory and typography.
+                    React course covering many different state-management
+                    solutions in the context of an e-commerce project.
                   </p>
                 </div>
               </div>
 
               <div className="grid content-center gap-4">
-                <p className="text-1xl text-center font-semibold  leading-none text-rose-600  sm:text-2xl">
+                <p className="pb-2 pt-8  text-center text-2xl   font-bold leading-none text-rose-600">
                   {" "}
                   In Progress
                 </p>
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
                         {" "}
                         Princeton{" "}
-                        <span className="dark:text-rose-600">
-                          {" "}
-                          Algorithms
-                        </span>{" "}
-                        I & II
+                        <span className=" text-rose-600"> Algorithms</span> I &
+                        II
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Coursera - Kevin Wayne and Robert Sedgewick
                       </p>
                     </div>
@@ -152,7 +143,7 @@ const Courses = () => {
                       src={princeton}
                       alt=""
                       width={100}
-                      className="mb- -full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="mb- -full ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
@@ -162,18 +153,18 @@ const Courses = () => {
                     string-processing algorithms.
                   </p>
                 </div>
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
                         Testing with{" "}
-                        <span className="dark:text-rose-600"> Jest</span> and{" "}
-                        <span className="dark:text-rose-600">
+                        <span className=" text-rose-600"> Jest</span> and{" "}
+                        <span className=" text-rose-600">
                           {" "}
                           React Testing Library
                         </span>
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Udemy - Bonnie Schulkin
                       </p>
                     </div>
@@ -181,7 +172,7 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="-full ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
@@ -190,14 +181,14 @@ const Courses = () => {
                   </p>
                 </div>
 
-                <div className=" p-6 shadow-md dark:bg-stone-900">
+                <div className=" bg-stone-900 p-6  shadow-md">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-1xl font-bold  leading-none">
-                        <span className="dark:text-rose-600"> NodeJS</span> The
+                        <span className=" text-rose-600"> NodeJS</span> The
                         Complete Guide
                       </p>
-                      <p className="mb-2 text-sm dark:text-stone-400">
+                      <p className="mb-2 text-sm  text-stone-400">
                         Udemy - Maximilian Schwarzmüller
                       </p>
                     </div>
@@ -205,12 +196,12 @@ const Courses = () => {
                       src={udemy}
                       alt=""
                       width={150}
-                      className="-full h-12 w-12 bg-cover bg-center dark:bg-stone-500"
+                      className="-full ml-3 h-12 w-12 bg-stone-500  bg-cover bg-center"
                     />
                   </div>
                   <p>
                     {`Backend fundamentals and associated tooling/tech.
-                    project-based course. (MVC, REST APIs, GraphQL, Deno). (...You mean my fetch requests don't come from a mystical void-place?) `}
+                    project-based course. (MVC, REST APIs, GraphQL, Deno).`}
                   </p>
                 </div>
               </div>

@@ -22,7 +22,7 @@ const Header = () => {
             <a
               rel="noopener noreferrer"
               href="#offer"
-              className="flex items-center border-b-2 px-4 py-1  hover:border-rose-600 hover:text-rose-600  dark:border-transparent"
+              className="flex items-center border-b-2 border-transparent px-4  py-1 hover:border-rose-600   hover:text-rose-600"
             >
               About
             </a>
@@ -31,7 +31,7 @@ const Header = () => {
             <a
               rel="noopener noreferrer"
               href="#projects"
-              className="flex items-center border-b-2 px-4 py-1 hover:border-rose-600 hover:text-rose-600 dark:border-transparent"
+              className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600"
             >
               Projects
             </a>
@@ -40,7 +40,7 @@ const Header = () => {
             <a
               rel="noopener noreferrer"
               href="#courses"
-              className="flex items-center border-b-2 px-4 py-1 hover:border-rose-600 hover:text-rose-600 dark:border-transparent"
+              className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600"
             >
               Courses
             </a>
@@ -49,15 +49,16 @@ const Header = () => {
             <a
               rel="noopener noreferrer"
               href="#contact"
-              className="flex items-center border-b-2 px-4 py-1 hover:border-rose-600 hover:text-rose-600 dark:border-transparent "
+              className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600 "
             >
               Contact
             </a>
           </li>
         </ul>
         <div
-          onMouseEnter={() => setIsOpen(!isOpen)}
-          onMouseLeave={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
+          onMouseEnter={() => setIsOpen(true)}
+          onMouseLeave={() => setIsOpen(false)}
           className="relative flex justify-end p-4 md:hidden"
         >
           <svg

@@ -12,7 +12,7 @@ const GuestbookEntries = () => {
     );
 
   return (
-    <div className="text-wrap mt-8 flex max-h-80 flex-col gap-3 overflow-x-hidden  border  border-stone-400 p-4">
+    <div className="text-wrap my-6 flex max-h-80 flex-col gap-3 overflow-x-hidden  border  border-stone-400 p-4">
       {guestbookEntries?.map((entry, index) => {
         return (
           <div key={index}>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Caret from "../component/caret.component";
 
 const About = () => {
   const [isShowing, setIsShowing] = useState(false);
@@ -9,13 +8,15 @@ const About = () => {
   };
 
   return (
-    <section className=" container mx-auto w-96 pt-24 pb-48">
+    <section className="m-auto w-3/4 max-w-lg pt-24 pb-40">
       <h2 className="pb-5 text-3xl">About Me</h2>
-      <div className="flex items-center">
+      <div
+        onClick={handleClick}
+        className=" flex items-center hover:cursor-pointer"
+      >
         <div
-          onClick={handleClick}
           className={
-            `relative right-5 flex h-16 w-16 transition-all hover:cursor-pointer active:rotate-90 ` +
+            `relative right-3 flex h-8 w-8 text-rose-600 transition-all  active:rotate-90 ` +
             (!isShowing ? "rotate-90" : "rotate-0")
           }
         >
@@ -35,7 +36,7 @@ const About = () => {
             />
           </svg>
         </div>
-        <h3 className="mb-5">short version</h3>
+        <h3>short version</h3>
       </div>
       {!isShowing && (
         <p className="mb-5 text-lg">
@@ -44,11 +45,14 @@ const About = () => {
           put my coding skills to use for sustainability, education, and fun.
         </p>
       )}
-      <div className="flex items-center">
+      <div
+        onClick={handleClick}
+        className="flex items-center hover:cursor-pointer"
+      >
         <div
           onClick={handleClick}
           className={
-            `relative right-5 flex h-16 w-16 transition-all hover:cursor-pointer active:rotate-90 ` +
+            `relative right-3 flex h-8 w-8 text-rose-600 transition-all  active:rotate-90 ` +
             (isShowing ? "rotate-90" : "rotate-0")
           }
         >
@@ -71,12 +75,22 @@ const About = () => {
         <h3>longer version</h3>
       </div>
       {isShowing && (
-        <p className="mb-5 text-lg">
-          {`I used to travel the world and teach English, in far-flung places like Japan, the UAE, and Central America. I've always loved languages, and learned Spanish, French, and Japanese along the way. Later I decided to pursue a longstanding passion for
-        sustainability, and became a social scientist looking at environmental
-        issues, particularly surrounding people's values. As much as I loved my work, I had an urge to create. I really fell in love with coding and I think I can make a bigger impact in tech leveraging my sustainability and education background.
+        <>
+          <p className="mb-5 text-lg">
+            {`I used to travel the world and teach English, in far-flung places like Japan, the UAE, and Central America. I learned a lot about different cultures, different people's ways of working, living, and communicating. I've always loved languages, and learned Spanish, French, and Japanese along the way. 
         `}
-        </p>
+          </p>
+          <p className="mb-5 text-lg">
+            {` Later I pursued a longstanding passion for
+        sustainability, and became a social scientist looking at environmental
+        issues, particularly surrounding people's values. 
+        `}
+          </p>
+          <p className="mb-5 text-lg">
+            {` While I loved doing research, I had an urge to create. I really fell in love with coding. I think I can make a bigger impact in tech leveraging my sustainability and education background. At this stage I've worked on many different projects as well as freelancing, and am currently looking for a more permanent role.
+        `}
+          </p>
+        </>
       )}
     </section>
   );

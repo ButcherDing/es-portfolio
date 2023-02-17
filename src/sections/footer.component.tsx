@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer id="footer">
-      <div className="container mx-auto flex flex-col p-4 md:p-8 lg:flex-row">
-        <ul className="space-y-4 self-center py-6 text-center sm:flex sm:justify-around sm:space-y-0 sm:space-x-4 lg:flex-1 lg:justify-start">
+      <div className="container mx-auto flex flex-col p-4 md:p-8">
+        <ul className="flex flex-row gap-5 self-center py-6 text-center sm:flex sm:justify-around sm:space-y-0 sm:space-x-4 lg:flex-1 lg:justify-start">
           <a href="#offer">
             <li>About</li>
           </a>

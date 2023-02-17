@@ -5,7 +5,7 @@ export const Hero = () => {
         <h1 className="w-64 text-8xl leading-none">
           {" "}
           Evon
-          <span className="dark:text-rose-600"> Scott</span>
+          <span className=" text-rose-600"> Scott</span>
         </h1>
         <p className="mt-8 text-stone-300">
           {" "}
@@ -20,8 +20,7 @@ export const Hero = () => {
         <p>
           {`In a hurry? Look at `}
           <a
-            href="https://ines-chuaqui-preview.netlify.app/"
-            target="_blank"
+            href="#projects"
             rel="noopener noreferrer"
             className="text-rose-500"
           >
@@ -32,13 +31,13 @@ export const Hero = () => {
         </p>
         <div className="mt-10 flex flex-wrap justify-center">
           <a href="#offer" rel="">
-            <button className="m-2 w-40  px-8 py-3 text-lg dark:bg-rose-600 dark:text-stone-900">
+            <button className="m-2 w-40  bg-rose-600 px-8 py-3  text-lg  text-stone-900">
               Learn More
             </button>
           </a>
 
           <a href="#contact">
-            <button className="m-2 w-40 border  px-8 py-3 text-lg dark:border-stone-500 dark:text-stone-50">
+            <button className="m-2 w-40 border  border-stone-500 px-8 py-3  text-lg  text-stone-50">
               Hire Me
             </button>
           </a>

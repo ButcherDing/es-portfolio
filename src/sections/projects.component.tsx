@@ -12,22 +12,22 @@ const Projects = () => {
         <h1 className="text-center  text-4xl leading-none lg:text-5xl">
           {" "}
           Featured
-          <span className="dark:text-rose-600"> Project</span>
+          <span className=" text-rose-600"> Project</span>
         </h1>
-        <div className="group mx-auto block max-w-sm gap-3  hover:no-underline focus:no-underline dark:bg-stone-900 sm:max-w-full lg:grid lg:grid-cols-12">
+        <div className="group mx-auto block max-w-sm gap-3  bg-stone-900 hover:no-underline  focus:no-underline sm:max-w-full lg:grid lg:grid-cols-12">
           <Image
             src={ic_gallery}
             width={1472}
             height={835}
             alt="Website Design System"
-            className="h-50  object-contain dark:bg-stone-700 sm:h-96 lg:col-span-6"
+            className="h-50  bg-stone-700  object-contain sm:h-96 lg:col-span-6"
           />
           <div className="flex flex-col justify-between gap-5 space-y-2 p-6 lg:col-span-6 ">
             <div>
               <h3 className="text-2xl  group-hover:underline group-focus:underline sm:text-3xl">
                 {`Ines Chuaqui`}
               </h3>
-              <span className="text-xs dark:text-stone-400">
+              <span className="text-xs  text-stone-400">
                 Freelance e-commerce/portfolio app
               </span>
               <p>
@@ -41,7 +41,7 @@ const Projects = () => {
             </div>
 
             <div className="flex justify-around gap-5 lg:justify-between ">
-              <button className="flex w-40 items-center justify-around border py-3 dark:border-stone-700 dark:text-stone-50">
+              <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
                 Source
                 <a
                   target="_blank"
@@ -66,7 +66,7 @@ const Projects = () => {
                   </svg>
                 </a>
               </button>
-              <button className=" flex w-40 items-center justify-around border py-3 dark:border-stone-700 dark:text-stone-50">
+              <button className=" flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
                 {" "}
                 Live
                 <a
@@ -141,13 +141,13 @@ const Projects = () => {
         </div>
 
         <h1 className="text-center   text-4xl leading-none lg:text-5xl">
-          <span className="dark:text-rose-600"> Personal</span> Projects
+          <span className=" text-rose-600"> Personal</span> Projects
         </h1>
         <div className="grid grid-cols-1 justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <a
             rel="noopener noreferrer"
             href="#"
-            className="group mx-auto flex max-w-sm flex-auto flex-col hover:no-underline focus:no-underline dark:bg-stone-900"
+            className="group mx-auto flex max-w-sm flex-auto flex-col bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
               role="presentation"
@@ -155,7 +155,7 @@ const Projects = () => {
               width={480}
               height={360}
               alt="Recipe Website"
-              className="h-44 w-full  object-contain dark:bg-stone-700"
+              className="h-44 w-full  bg-stone-700  object-contain"
             />
 
             <div className="flex flex-auto flex-col justify-between gap-16 p-6">
@@ -163,7 +163,7 @@ const Projects = () => {
                 <h3 className="text-2xl  group-hover:underline group-focus:underline">
                   Crown Clothing
                 </h3>
-                <span className="text-xs dark:text-stone-400">
+                <span className="text-xs  text-stone-400">
                   Single Page E-commerce React App
                 </span>
                 <p>
@@ -194,7 +194,7 @@ const Projects = () => {
           <a
             rel="noopener noreferrer"
             href="https://omnifood-ev.netlify.app/"
-            className="group max-w-sm hover:no-underline focus:no-underline dark:bg-stone-900"
+            className="group max-w-sm bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
               role="presentation"
@@ -202,16 +202,14 @@ const Projects = () => {
               width={480}
               height={360}
               alt="Food Website"
-              className="h-44 w-full  object-contain dark:bg-stone-700"
+              className="h-44 w-full  bg-stone-700  object-contain"
             />
             <div className="flex flex-auto flex-col justify-between gap-16 p-6">
               <div>
                 <h3 className="text-2xl  group-hover:underline group-focus:underline">
                   Omnifood
                 </h3>
-                <span className="text-xs dark:text-stone-400">
-                  Landing Page
-                </span>
+                <span className="text-xs  text-stone-400">Landing Page</span>
                 <p>
                   Fully responsive static landing page I built as part of a
                   Udemy course on CSS/HTML. Custom styles using CSS flex, grid.
@@ -239,7 +237,7 @@ const Projects = () => {
           <a
             rel="noopener noreferrer"
             href="#"
-            className="group mx-auto flex max-w-sm flex-auto flex-col hover:no-underline focus:no-underline dark:bg-stone-900"
+            className="group mx-auto flex max-w-sm flex-auto flex-col bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
               role="presentation"
@@ -247,7 +245,7 @@ const Projects = () => {
               width={480}
               height={360}
               alt="Recipe Website"
-              className="h-44 w-full  object-contain dark:bg-stone-700"
+              className="h-44 w-full  bg-stone-700  object-contain"
             />
 
             <div className="flex flex-auto flex-col justify-between gap-16 p-6">
@@ -255,7 +253,7 @@ const Projects = () => {
                 <h3 className="text-2xl  group-hover:underline group-focus:underline">
                   Forkify
                 </h3>
-                <span className="text-xs dark:text-stone-400">
+                <span className="text-xs  text-stone-400">
                   Recipe Search App
                 </span>
                 <p>
@@ -278,7 +276,7 @@ const Projects = () => {
           </a>
         </div>
         <div className="flex justify-center">
-          {/* <button className="-md px-6 py-3 text-sm hover:underline dark:bg-stone-900 dark:text-stone-400">
+          {/* <button className="-md px-6 py-3 text-sm hover:underline  bg-stone-900  text-stone-400">
             Load more posts...
           </button> */}
         </div>

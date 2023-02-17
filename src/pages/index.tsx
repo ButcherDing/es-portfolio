@@ -11,7 +11,7 @@ import Tech from "../sections/tech.component";
 
 const Home: NextPage = () => {
   return (
-    <div className="space-y-12">
+    <div>
       <Header />
 
       {/* <div className="hero-gradient"> */}

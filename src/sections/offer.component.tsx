@@ -3,17 +3,17 @@ const Offer = () => {
     <section id="offer" className="pt-16">
       <div className="container mx-auto">
         <div className="container grid grid-cols-4 justify-items-center p-4 md:p-8">
-          <h2 className="col-span-4 text-center text-2xl  leading-none sm:text-4xl">
+          <h2 className="col-span-4 mb-6 text-center  text-2xl leading-none sm:text-4xl">
             What I Offer
           </h2>
-          <div className="col-span-full grid max-w-5xl gap-x-24 gap-y-12 p-12 sm:grid-cols-2 md:text-left">
+          <div className="col-span-full grid max-w-5xl gap-x-24 gap-y-12 p-4 sm:grid-cols-2 md:p-12 md:text-left">
             <div className="flex flex-col gap-2">
               <svg
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 dark:text-rose-600"
+                className="h-6 w-6  text-rose-600"
               >
                 <path
                   strokeLinecap="round"
@@ -29,7 +29,7 @@ const Offer = () => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="dark:text-rose-600"
+                  className=" text-rose-600"
                   href="https://ines-chuaqui-preview.netlify.app/"
                 >
                   this project
@@ -45,7 +45,7 @@ const Offer = () => {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 dark:text-rose-600"
+                className="h-6 w-6  text-rose-600"
               >
                 <path
                   strokeLinecap="round"
@@ -64,7 +64,7 @@ const Offer = () => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="h-6 w-6 dark:text-rose-600"
+                  className="h-6 w-6  text-rose-600"
                   href="https://www.forestresearch.gov.uk/research/public-perceptions-of-urban-trees/"
                 >
                   Forest Research
@@ -73,7 +73,7 @@ const Offer = () => {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="h-6 w-6 dark:text-rose-600"
+                  className="h-6 w-6  text-rose-600"
                   href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219607"
                 >
                   PLOS One
@@ -84,7 +84,7 @@ const Offer = () => {
               <div className="flex flex-auto">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="ionicon mr-5 h-6 w-6 dark:text-rose-600"
+                  className="ionicon mr-5 h-6 w-6  text-rose-600"
                   viewBox="0 0 512 512"
                 >
                   <title>Leaf</title>
@@ -103,7 +103,7 @@ const Offer = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="h-6 w-6 dark:text-rose-600"
+                  className="h-6 w-6  text-rose-600"
                 >
                   <path
                     strokeLinecap="round"
@@ -122,7 +122,7 @@ const Offer = () => {
                 Demonstrating this, and my love of code, I volunteer teaching
                 coding skills to refugees and disadvantaged people at{" "}
                 <a
-                  className="h-6 w-6 dark:text-rose-600"
+                  className="h-6 w-6  text-rose-600"
                   href="https://codeyourfuture.io/"
                 >
                   CodeYourFuture
@@ -137,7 +137,7 @@ const Offer = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-6 w-6 dark:text-rose-600"
+                className="h-6 w-6  text-rose-600"
               >
                 <path
                   strokeLinecap="round"

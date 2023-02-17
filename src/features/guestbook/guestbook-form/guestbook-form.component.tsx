@@ -60,7 +60,7 @@ const GuestbookForm = () => {
 
       <button
         type="submit"
-        className="text-s w-1/2 self-center  p-3 uppercase tracking-wide dark:bg-rose-600 dark:text-stone-900"
+        className="text-s w-3/4 self-center bg-rose-600 p-3 uppercase  tracking-wide  text-stone-900 md:w-1/2"
       >
         Sign Guestbook
       </button>

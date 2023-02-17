@@ -6,7 +6,7 @@ const Dropdown = () => {
           <a
             rel="noopener noreferrer"
             href="#offer"
-            className="mb-1 flex items-center border-b-2 px-4 hover:text-rose-500 dark:border-transparent"
+            className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
             About
           </a>
@@ -15,7 +15,7 @@ const Dropdown = () => {
           <a
             rel="noopener noreferrer"
             href="#projects"
-            className="mb-1 flex items-center border-b-2 px-4 hover:text-rose-500 dark:border-transparent"
+            className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
             Projects
           </a>
@@ -24,7 +24,7 @@ const Dropdown = () => {
           <a
             rel="noopener noreferrer"
             href="#contact"
-            className="mb-1 flex items-center border-b-2 px-4 hover:text-rose-500 dark:border-transparent"
+            className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
             Contact
           </a>
@@ -33,7 +33,7 @@ const Dropdown = () => {
           <a
             rel="noopener noreferrer"
             href="#guestbook"
-            className="mb-1 flex items-center border-b-2 px-4 hover:text-rose-500 dark:border-transparent"
+            className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
             Guestbook
           </a>

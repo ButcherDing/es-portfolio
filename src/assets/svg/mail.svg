@@ -2,7 +2,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
                 href="#"
-                className="-full flex h-8 w-8 items-center justify-center dark:bg-rose-600 dark:text-stone-900 sm:h-10 sm:w-10"
+                className="-full flex h-8 w-8 items-center justify-center  bg-rose-600  text-stone-900 sm:h-10 sm:w-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
