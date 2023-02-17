@@ -113,37 +113,13 @@ const Projects = () => {
                 </a>
               </button>
             </div>
-
-            {/* <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                React Redux Toolkit
-              </span>
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Typescript
-              </span>
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Styled Components
-              </span>
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Firebase
-              </span>
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Netlify
-              </span>
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Serverless Functions
-              </span>
-              <span className="inline-block whitespace-nowrap  bg-stone-700 py-1 px-2.5 text-center align-baseline text-xs font-bold  leading-none text-white">
-                Jest / React Testing Library
-              </span>
-            </div> */}
           </div>
         </div>
 
-        <h1 className="text-center   text-4xl leading-none lg:text-5xl">
+        <h1 className="pt-8 text-center  text-3xl leading-none lg:text-5xl">
           <span className=" text-rose-600"> Personal</span> Projects
         </h1>
-        <div className="grid grid-cols-1 justify-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 justify-center gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           <a
             rel="noopener noreferrer"
             href="#"
@@ -194,7 +170,7 @@ const Projects = () => {
           <a
             rel="noopener noreferrer"
             href="https://omnifood-ev.netlify.app/"
-            className="group max-w-sm bg-stone-900 hover:no-underline  focus:no-underline"
+            className="group mx-auto flex max-w-sm flex-auto flex-col bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
               role="presentation"
