@@ -12,7 +12,7 @@ export const Hero = () => {
           HTML | CSS | JavaScript | TypeScript | Node.js
         </p>
         <p className="mt-8 mb-12 px-8 text-lg">
-          {`👋 Hi, I'm a front-end focused web developer with an insatiable curiosity. And an interesting backstory. 
+          {`👋 Hi, I'm a front-end web developer with insatiable curiosity. And an interesting backstory. 
           
   `}
         </p>
