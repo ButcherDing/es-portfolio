@@ -87,7 +87,7 @@ const About = () => {
         `}
           </p>
           <p className="mb-5 text-lg">
-            {` While I loved doing research, I had an urge to create. I really fell in love with coding. I think I can make a bigger impact in tech leveraging my sustainability and education background. At this stage I've worked on many different projects as well as freelancing, and am currently looking for a more permanent role.
+            {` While I loved doing research, I had an urge to create. I really fell in love with web development, and now I can hardly go a day without doing some form of coding. I see so much unrealised opportunity to better leverage tech to help people and planet, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can bring value to a team.
         `}
           </p>
         </>

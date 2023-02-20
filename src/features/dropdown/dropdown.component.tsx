@@ -23,19 +23,19 @@ const Dropdown = () => {
         <li className="flex">
           <a
             rel="noopener noreferrer"
-            href="#contact"
+            href="#courses"
             className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
-            Contact
+            Courses
           </a>
         </li>
         <li className="flex">
           <a
             rel="noopener noreferrer"
-            href="#guestbook"
+            href="#contact"
             className="mb-1 flex items-center border-b-2 border-transparent px-4  hover:text-rose-500"
           >
-            Guestbook
+            Contact
           </a>
         </li>
       </ul>

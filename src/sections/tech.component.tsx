@@ -6,7 +6,10 @@ export const Tech = () => {
         <div className="container mx-auto flex flex-col items-center px-6 text-center md:px-10 lg:px-32 xl:max-w-2xl">
           <p className="w-100 my-10 text-stone-300">
             {" "}
-            <strong> HTML | CSS | JavaScript | TypeScript | Node.js</strong>
+            <strong>
+              {" "}
+              React | TypeScript | JavaScript| HTML | CSS | Node.js
+            </strong>
           </p>
           <p className=" text-stone-300">
             {" "}
@@ -34,8 +37,8 @@ export const Tech = () => {
           </p>
           <p className="mb-6 text-stone-300">
             {" "}
-            Git | GitHub | Netlify | Firebase | Stripe | PostgresQL | GraphQL |
-            NextAuth.js | Prisma | tRPC | Jest | React Testing Library
+            Git | GitHub | Jest | React Testing Library | PostgresQL | GraphQL |
+            Netlify | Vercel | Firebase | Stripe | NextAuth.js | Prisma | tRPC
           </p>
         </div>
       </div>

@@ -31,7 +31,7 @@ const Projects = () => {
                 Freelance e-commerce/portfolio app
               </span>
               <p>
-                Freelance work for a Vancouver artist to facilitate sale of
+                Freelance project for a Vancouver artist to facilitate sale of
                 prints and present her work. Main features: lightbox gallery,
                 login/auth, cart, custom payment (Stripe). Backend with Firebase
                 / Netlify serverless functions. Components from scratch with

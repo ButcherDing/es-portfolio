@@ -9,10 +9,10 @@ export const Hero = () => {
         </h1>
         <p className="mt-8 text-stone-300">
           {" "}
-          HTML | CSS | JavaScript | TypeScript | Node.js
+          React | TypeScript | JavaScript | HTML | CSS | Node.js
         </p>
         <p className="mt-8 mb-12 px-8 text-lg">
-          {`👋 Hi, I'm a front-end web developer with insatiable curiosity. And an interesting backstory. 
+          {`👋 Hi, I'm an endlessly curious frontend web developer. With an unusual backstory. 
           
   `}
         </p>
