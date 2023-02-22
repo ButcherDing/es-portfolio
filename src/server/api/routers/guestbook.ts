@@ -31,10 +31,12 @@ export const guestbookRouter = createTRPCRouter({
         await ctx.prisma.guestbook.create({
           data: {
             name: input.name,
-            message: input.message
+            message: input.message,
           },
         });
       } catch (error) {
+        console.log("error with postMessage", error);
+
         console.log(error);
       }
     }),

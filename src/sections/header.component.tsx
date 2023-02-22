@@ -54,6 +54,15 @@ const Header = () => {
               Contact
             </a>
           </li>
+          <li className="flex">
+            <a
+              rel="noopener noreferrer"
+              href="/notetaker/notetaker"
+              className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600 "
+            >
+              Super Secret Stuff
+            </a>
+          </li>
         </ul>
         <div
           onClick={() => setIsOpen(!isOpen)}
