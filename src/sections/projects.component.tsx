@@ -122,7 +122,8 @@ const Projects = () => {
         <div className="grid grid-cols-1 justify-center gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           <a
             rel="noopener noreferrer"
-            href="#"
+            target="_blank"
+            href="https://crown-clothing-v2-ev.netlify.app/"
             className="group mx-auto flex max-w-sm flex-auto flex-col bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
@@ -170,6 +171,7 @@ const Projects = () => {
           <a
             rel="noopener noreferrer"
             href="https://omnifood-ev.netlify.app/"
+            target="_blank"
             className="group mx-auto flex max-w-sm flex-auto flex-col bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
@@ -212,7 +214,8 @@ const Projects = () => {
           </a>
           <a
             rel="noopener noreferrer"
-            href="#"
+            target="_blank"
+            href="https://forkify-cejed.netlify.app/"
             className="group mx-auto flex max-w-sm flex-auto flex-col bg-stone-900 hover:no-underline  focus:no-underline"
           >
             <Image
