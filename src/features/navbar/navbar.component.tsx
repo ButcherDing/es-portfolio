@@ -1,4 +1,5 @@
 import { signIn, useSession, signOut } from "next-auth/react";
+import Link from "next/link";
 
 const Navbar = () => {
   const { data: sessionData } = useSession();
@@ -8,9 +9,12 @@ const Navbar = () => {
       <div className="flex-1 pl-5 text-3xl font-bold">
         {sessionData?.user?.name
           ? `Notes for ${sessionData.user.name}`
-          : "Sign in to make or see your notes"}
+          : "Sign in for codenotes"}
       </div>
       <div className="flex-none gap-2">
+        <Link className="link px-5" href="/">
+          Back to Normie World
+        </Link>
         <div className="dropdown-end dropdown">
           {sessionData?.user ? (
             <label
