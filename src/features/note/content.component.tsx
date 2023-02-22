@@ -1,8 +1,8 @@
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import { api, type RouterOutputs } from "../../utils/api";
-import NoteCard from "../note/note-card.component";
-import NoteEditor from "../note/note-editor.component";
+import NoteCard from "./note-card.component";
+import NoteEditor from "./note-editor.component";
 
 type Topic = RouterOutputs["topic"]["getAll"][0];
 
@@ -21,6 +21,12 @@ const Content = () => {
   );
 
   const createTopic = api.topic.create.useMutation({
+    onSuccess: () => {
+      void refetchTopics();
+    },
+  });
+
+  const deleteTopic = api.topic.delete.useMutation({
     onSuccess: () => {
       void refetchTopics();
     },
@@ -76,6 +82,15 @@ const Content = () => {
             }
           }}
         />
+        <button
+          className="btn-warning btn-xs btn mt-5 px-5"
+          onClick={() =>
+            selectedTopic !== null &&
+            void deleteTopic.mutate({ id: selectedTopic?.id })
+          }
+        >
+          delete current topic
+        </button>
       </div>
       <div className="col-span-3">
         <div>

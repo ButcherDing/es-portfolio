@@ -1,5 +1,5 @@
-import Content from "../../features/content/content.component";
 import Navbar from "../../features/navbar/navbar.component";
+import Content from "../../features/note/content.component";
 
 const Notetaker = () => {
   return (

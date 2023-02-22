@@ -1,16 +1,17 @@
 import { useState } from "react";
 
 import CodeMirror from "@uiw/react-codemirror";
-import { markdownLanguage, markdown } from "@codemirror/lang-markdown";
+import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
+import { dracula } from "@uiw/codemirror-theme-dracula";
 
-const NoteEditor = ({
+export const NoteEditor = ({
   onSave,
 }: {
   onSave: (note: { title: string; content: string }) => void;
 }) => {
-  const [code, setCode] = useState("");
-  const [title, setTitle] = useState("");
+  const [code, setCode] = useState<string>("```ts\n\n```");
+  const [title, setTitle] = useState<string>("");
 
   return (
     <div className="card mt-5 border bg-base-100 shadow-lg">
@@ -30,12 +31,15 @@ const NoteEditor = ({
           height="30vh"
           minWidth="100%"
           minHeight="30vh"
+          theme={dracula}
           extensions={[
             markdown({ base: markdownLanguage, codeLanguages: languages }),
           ]}
           onChange={(value) => setCode(value)}
           className="border border-gray-300"
         />
+      </div>
+      <div className="card-actions justify-end">
         <button
           onClick={() => {
             onSave({
