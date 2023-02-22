@@ -3,7 +3,6 @@ import { useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
 import { markdownLanguage, markdown } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
-import { dracula } from "@uiw/codemirror-theme-dracula";
 
 const NoteEditor = ({
   onSave,

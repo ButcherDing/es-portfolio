@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Dropdown from "../features/dropdown/dropdown.component";
 import esLogo from "../images/es-logo.png";
@@ -55,13 +56,13 @@ const Header = () => {
             </a>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
               href="/notetaker/notetaker"
               className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600 "
             >
               Super Secret Stuff
-            </a>
+            </Link>
           </li>
         </ul>
         <div

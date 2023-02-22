@@ -23,6 +23,8 @@ export const serverSchema = z.object({
   DISCORD_CLIENT_SECRET: z.string().min(1),
   GITHUB_CLIENT_ID: z.string().min(1),
   GITHUB_CLIENT_SECRET: z.string().min(1),
+  GITHUB_CLIENT_ID_DEV: z.string().min(1),
+  GITHUB_CLIENT_SECRET_DEV: z.string().min(1),
 });
 
 /**
@@ -39,6 +41,8 @@ export const serverEnv = {
   DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET,
   GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
   GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
+  GITHUB_CLIENT_ID_DEV: process.env.GITHUB_CLIENT_ID_DEV,
+  GITHUB_CLIENT_SECRET_DEV: process.env.GITHUB_CLIENT_SECRET_DEV,
 };
 
 /**

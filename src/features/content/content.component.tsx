@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 import { useState } from "react";
-import { api, RouterOutputs } from "../../utils/api";
+import { api, type RouterOutputs } from "../../utils/api";
 import NoteCard from "../note/note-card.component";
 import NoteEditor from "../note/note-editor.component";
 
