@@ -4,7 +4,7 @@ import Navbar from "../../features/navbar/navbar.component";
 const Notetaker = () => {
   return (
     <>
-      <div data-theme="cyberpunk" className="">
+      <div data-theme="cyberpunk" className="h-screen">
         <Navbar />
         <Content />
       </div>

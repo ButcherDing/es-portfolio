@@ -20,7 +20,7 @@ model Example {
   updatedAt DateTime @updatedAt
 }
 
-// Necessary for Next auth
+/////// NEXT AUTH
 model Account {
   id                String  @id @default(cuid())
   userId            String
@@ -67,6 +67,8 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+///////////
 
 model Guestbook {
   id        String   @id @default(cuid())

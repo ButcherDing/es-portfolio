@@ -54,6 +54,7 @@ export const authOptions: NextAuthOptions = {
       clientId: env.DISCORD_CLIENT_ID,
       clientSecret: env.DISCORD_CLIENT_SECRET,
     }),
+    // github can't use the same id for dev and production - lame.
     GithubProvider({
       clientId:
         process.env.NODE_ENV === "production"
