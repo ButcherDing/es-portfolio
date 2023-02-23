@@ -9,7 +9,13 @@ type Topic = RouterOutputs["topic"]["getAll"][0];
 const Content = () => {
   const { data: sessionData } = useSession();
   const [selectedTopic, setSelectedTopic] = useState<Topic | null>(null);
+  const [topicInput, setTopicInput] = useState("");
 
+  // want selected codenotes feature to go back and edit your notes!
+  // useState for selectedCodenotes
+  // feed the text back into our input template... unfortunately this is now getting to be a bit of a silly component and needs to be split up. Really topics and notes are seperate features and this should be architected accordingly. BAD JACK :)
+
+  ////// TOPICS
   const { data: topics, refetch: refetchTopics } = api.topic.getAll.useQuery(
     undefined, // means no input
     {
@@ -32,6 +38,7 @@ const Content = () => {
     },
   });
 
+  //////// NOTES
   const { data: notes, refetch: refetchNotes } = api.note.getAll.useQuery(
     {
       topicId: selectedTopic?.id ?? "",
@@ -49,10 +56,20 @@ const Content = () => {
       void refetchNotes();
     },
   });
+  //////// HELPERS
+  const createTopicHandler = () => {
+    if (topicInput.trim() === "") return;
+
+    createTopic.mutate({
+      title: topicInput,
+    });
+    setTopicInput("");
+  };
 
   return (
     <div className="mx-5 mt-5 grid grid-cols-4 gap-2 pb-5">
-      <div className="px-2">
+      <div className="flex flex-col px-2">
+        <h3 className="uppercase text-inherit">My Topics</h3>
         <ul className="menu rounded-box w-56 bg-base-100 p-2">
           {topics?.map((topic) => (
             <li key={topic.id}>
@@ -73,27 +90,37 @@ const Content = () => {
           type="text"
           placeholder="New Topic"
           className="input-bordered input input-sm w-full"
+          onChange={(e) => {
+            setTopicInput(e.currentTarget.value);
+          }}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
-              createTopic.mutate({
-                title: e.currentTarget.value,
-              });
-              e.currentTarget.value = "";
+              createTopicHandler();
             }
           }}
+          value={topicInput}
         />
-        <button
-          className="btn-warning btn-xs btn mt-5 px-5"
-          onClick={() =>
-            selectedTopic !== null &&
-            void deleteTopic.mutate({ id: selectedTopic?.id })
-          }
-        >
-          delete current topic
-        </button>
+        <div className="btn-group mt-5 flex w-full">
+          <button
+            className="btn btn-primary btn-sm w-1/2"
+            onClick={createTopicHandler}
+          >
+            create topic
+          </button>
+          <button
+            className="warning btn-accent btn-sm w-1/2"
+            onClick={() =>
+              selectedTopic !== null &&
+              void deleteTopic.mutate({ id: selectedTopic?.id })
+            }
+          >
+            delete topic
+          </button>
+        </div>
       </div>
       <div className="col-span-3">
         <div>
+          <h3 className="uppercase text-inherit">My Notes</h3>
           {notes?.map((note) => (
             <div key={note.id} className="mt-5">
               <NoteCard

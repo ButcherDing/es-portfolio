@@ -5,22 +5,33 @@ import { markdown, markdownLanguage } from "@codemirror/lang-markdown";
 import { languages } from "@codemirror/language-data";
 import { dracula } from "@uiw/codemirror-theme-dracula";
 
+// TODO
+// do something with errors when not signed in
+// fix sizing
+// be creative.
+
 export const NoteEditor = ({
   onSave,
 }: {
   onSave: (note: { title: string; content: string }) => void;
 }) => {
-  const [code, setCode] = useState<string>("```ts\n\n```");
+  const [code, setCode] = useState<string>(
+    "```js \n  // Change 'js' to whatever language you want to code in.   \n```"
+  );
   const [title, setTitle] = useState<string>("");
 
   return (
-    <div className="card mt-5 border bg-base-100 shadow-lg">
+    <div className="card mt-5 border border-base-300 bg-base-100 shadow-lg">
+      <h3 className="pt-2 text-center uppercase text-primary-content">
+        Note Editor
+      </h3>
+
       <div className="card-body">
         <h2 className="card-title">
           <input
             type="text"
             placeholder="Note title"
-            className="input-primary input input-lg w-full font-bold"
+            className="input input-lg w-full border-base-300 font-bold"
             value={title}
             onChange={(e) => setTitle(e.currentTarget.value)}
           />
@@ -49,7 +60,7 @@ export const NoteEditor = ({
             setCode("");
             setTitle("");
           }}
-          className="btn-primary btn"
+          className="btn btn-primary"
           disabled={title.trim().length === 0 || code.trim().length === 0}
         >
           Save
