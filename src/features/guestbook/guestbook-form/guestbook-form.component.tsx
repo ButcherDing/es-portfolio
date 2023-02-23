@@ -1,5 +1,5 @@
 import { useSession } from "next-auth/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { api } from "../../../utils/api";
 
 const GuestbookForm = () => {
@@ -24,7 +24,9 @@ const GuestbookForm = () => {
     },
   });
 
-  if (session) setFormName(session.user?.name as string);
+  useEffect(() => {
+    if (session) setFormName(session.user?.name as string);
+  }, []);
 
   return (
     <form
