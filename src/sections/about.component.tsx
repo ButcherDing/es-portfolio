@@ -42,7 +42,7 @@ const About = () => {
         <p className="mb-5 text-lg">
           Former international teacher, environmental social-scientist, and
           language-guy turned coder. I love learning, coding, building. I aim to
-          put my coding skills to use for sustainability, education, and fun.
+          put my skills to use for sustainability, education, and fun.
         </p>
       )}
       <div
