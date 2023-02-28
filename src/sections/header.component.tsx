@@ -37,7 +37,7 @@ const Header = () => {
               Projects
             </a>
           </li>
-          <li className="flex">
+          {/* <li className="flex">
             <a
               rel="noopener noreferrer"
               href="#courses"
@@ -45,7 +45,7 @@ const Header = () => {
             >
               Courses
             </a>
-          </li>
+          </li> */}
           <li className="flex">
             <a
               rel="noopener noreferrer"

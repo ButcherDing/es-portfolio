@@ -9,9 +9,9 @@ const Footer = () => {
           <a href="#projects">
             <li>Projects</li>
           </a>
-          <a href="#courses">
+          {/* <a href="#courses">
             <li>Courses</li>
-          </a>
+          </a> */}
           <a href="#contact">
             <li>Contact</li>
           </a>

@@ -20,7 +20,7 @@ const Dropdown = () => {
             Projects
           </a>
         </li>
-        <li className="flex">
+        {/* <li className="flex">
           <a
             rel="noopener noreferrer"
             href="#courses"
@@ -28,7 +28,7 @@ const Dropdown = () => {
           >
             Courses
           </a>
-        </li>
+        </li> */}
         <li className="flex">
           <a
             rel="noopener noreferrer"
