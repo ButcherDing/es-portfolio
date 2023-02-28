@@ -113,9 +113,7 @@ const Offer = () => {
                 </svg>
               </div>
 
-              <h5 className="text-xl ">
-                Sustainability / Education Background
-              </h5>
+              <h5 className="text-xl ">Sustainability & Education</h5>
               <p>
                 I care deeply about learning, sharing my knowledge with others,
                 and the social and ecological impact of the things we do.

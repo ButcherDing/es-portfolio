@@ -116,7 +116,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <h1 className="pt-8 text-center  text-3xl leading-none lg:text-5xl">
+        {/* <h1 className="pt-8 text-center  text-3xl leading-none lg:text-5xl">
           <span className=" text-rose-600"> Personal</span> Projects
         </h1>
         <div className="grid grid-cols-1 justify-center gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
@@ -253,12 +253,8 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </div>
-        <div className="flex justify-center">
-          {/* <button className="-md px-6 py-3 text-sm hover:underline  bg-stone-900  text-stone-400">
-            Load more posts...
-          </button> */}
-        </div>
+        </div> */}
+        <div className="flex justify-center"></div>
       </div>
     </section>
   );

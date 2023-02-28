@@ -61,7 +61,7 @@ const Header = () => {
               href="/notetaker/notetaker"
               className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600 "
             >
-              Experimental Danger Zone.
+              Experimental Mystery Zone.
             </Link>
           </li>
         </ul>
