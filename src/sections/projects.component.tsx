@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 import ic_gallery from "../images/ic_snip.jpg";
-import omnifood from "../images/omnifood.jpg";
-import forkify from "../images/forkify.jpg";
-import crown from "../images/crown-clothing.jpg";
+// import omnifood from "../images/omnifood.jpg";
+// import forkify from "../images/forkify.jpg";
+// import crown from "../images/crown-clothing.jpg";
 
 const Projects = () => {
   return (
@@ -24,9 +24,7 @@ const Projects = () => {
           />
           <div className="flex flex-col justify-between gap-5 space-y-2 p-6 lg:col-span-6 ">
             <div>
-              <h3 className="text-2xl  group-hover:underline group-focus:underline sm:text-3xl">
-                {`Ines Chuaqui`}
-              </h3>
+              <h3 className="text-2xl sm:text-3xl">{`Ines Chuaqui`}</h3>
               <span className="text-xs  text-stone-400">
                 Freelance e-commerce/portfolio app
               </span>

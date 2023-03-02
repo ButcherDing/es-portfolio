@@ -40,6 +40,7 @@ export const Tech = () => {
             Git | GitHub | Jest | React Testing Library | PostgresQL | GraphQL |
             Netlify | Vercel | Firebase | Stripe | NextAuth.js | Prisma | tRPC
           </p>
+          <p>* * *</p>
         </div>
       </div>
     </section>
