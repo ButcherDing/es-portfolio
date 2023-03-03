@@ -44,7 +44,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className=""
-                href="https://ines-chuaqui-preview.netlify.app/"
+                href="https://github.com/ButcherDing/ines-chuaqui"
               >
                 <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
                   Source
