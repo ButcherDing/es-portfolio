@@ -100,15 +100,15 @@ const Content = () => {
           }}
           value={topicInput}
         />
-        <div className="btn-group mt-5 flex w-full">
+        <div className="btn-group mt-5 flex h-min w-full flex-col gap-5">
           <button
-            className="btn btn-primary btn-sm w-1/2"
+            className="btn-primary btn-sm btn "
             onClick={createTopicHandler}
           >
             create topic
           </button>
           <button
-            className="warning btn-accent btn-sm w-1/2"
+            className="warning btn-accent btn-sm h-min"
             onClick={() =>
               selectedTopic !== null &&
               void deleteTopic.mutate({ id: selectedTopic?.id })

@@ -12,13 +12,10 @@ const Navbar = () => {
           : "Sign in for codenotes"}
       </div>
       <div className="flex-none gap-2">
-        <Link className="link px-5" href="/">
-          Back to Normie World
-        </Link>
         <div className="dropdown-end dropdown">
           {sessionData?.user ? (
             <>
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
                 <div className="w-10 rounded-full">
                   <picture>
                     <img
@@ -40,7 +37,7 @@ const Navbar = () => {
             </>
           ) : (
             <button
-              className="btn btn-ghost rounded-btn border bg-warning"
+              className="btn-ghost rounded-btn btn border bg-warning"
               onClick={() => void signIn()}
             >
               Sign in

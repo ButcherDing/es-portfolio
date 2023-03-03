@@ -3,6 +3,7 @@ import { guestbookRouter } from "./routers/guestbook";
 import { exampleRouter } from "./routers/example";
 import { topicRouter } from "./routers/topic";
 import { noteRouter } from "./routers/note";
+import { exerciseDataRouter } from "./routers/exerciseData";
 
 /**
  * This is the primary router for your server.
@@ -14,6 +15,7 @@ export const appRouter = createTRPCRouter({
   guestbook: guestbookRouter,
   topic: topicRouter,
   note: noteRouter,
+  exerciseData: exerciseDataRouter,
 });
 
 // export type definition of API
