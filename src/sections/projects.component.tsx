@@ -1,9 +1,10 @@
 import Image from "next/image";
 
 import ic_gallery from "../images/ic_snip.jpg";
-// import omnifood from "../images/omnifood.jpg";
-// import forkify from "../images/forkify.jpg";
-// import crown from "../images/crown-clothing.jpg";
+import omnifood from "../images/omnifood.jpg";
+import forkify from "../images/forkify.jpg";
+import crown from "../images/crown-clothing.jpg";
+import portfolio from "../images/es-portfolio.jpg";
 
 const Projects = () => {
   return (
@@ -12,7 +13,7 @@ const Projects = () => {
         <h1 className="text-center  text-4xl leading-none lg:text-5xl">
           {" "}
           Featured
-          <span className=" text-rose-600"> Project</span>
+          <span className=" text-rose-600"> Projects</span>
         </h1>
         <div className="group mx-auto block max-w-sm gap-3  bg-stone-900 hover:no-underline  focus:no-underline sm:max-w-full lg:grid lg:grid-cols-12">
           <Image
@@ -39,14 +40,14 @@ const Projects = () => {
             </div>
 
             <div className="flex justify-around gap-5 lg:justify-between ">
-              <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
-                Source
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=""
-                  href="https://ines-chuaqui-preview.netlify.app/"
-                >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+                href="https://ines-chuaqui-preview.netlify.app/"
+              >
+                <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                  Source
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="ionicon w-7"
@@ -62,16 +63,16 @@ const Projects = () => {
                       d="M160 368L32 256l128-112M352 368l128-112-128-112M304 96l-96 320"
                     />
                   </svg>
-                </a>
-              </button>
-              <button className=" flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
-                {" "}
-                Live
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://ines-chuaqui-preview.netlify.app/"
-                >
+                </button>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ines-chuaqui-preview.netlify.app/"
+              >
+                <button className=" flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                  {" "}
+                  Live
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="ionicon w-7"
@@ -108,15 +109,112 @@ const Projects = () => {
                       d="M256 48v416M464 256H48"
                     />
                   </svg>
-                </a>
-              </button>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="group mx-auto block max-w-sm gap-3  bg-stone-900 hover:no-underline  focus:no-underline sm:max-w-full lg:grid lg:grid-cols-12">
+          <Image
+            src={portfolio}
+            width={1472}
+            height={835}
+            alt="Website Design System"
+            className="h-50  bg-stone-700  object-contain sm:h-96 lg:col-span-6"
+          />
+          <div className="flex flex-col justify-between gap-5 space-y-2 p-6 lg:col-span-6 ">
+            <div>
+              <h3 className="text-2xl sm:text-3xl">{`This Place You Are In Right Now`}</h3>
+              <span className="text-xs  text-stone-400">
+                Edgy Portfolio Site
+              </span>
+              <p>
+                Fullstack site using Next.js, Tailwind, PostgresQL, Prisma,
+                tRPC, React Query, for full type safety on backend, plus auth
+                with NextAuth. Guestbook feature and experimental zone for
+                code-notetaking when logged in, prototyping/messing around with
+                DaisyUI, and coding exercises. A work in progress.
+              </p>
+            </div>
+
+            <div className="flex justify-around gap-5 lg:justify-between ">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className=""
+                href="https://github.com/ButcherDing/es-portfolio"
+              >
+                <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                  Source
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ionicon w-7"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Code Slash</title>
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="32"
+                      d="M160 368L32 256l128-112M352 368l128-112-128-112M304 96l-96 320"
+                    />
+                  </svg>
+                </button>
+              </a>
+              <a href="#">
+                <button className=" flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                  {" "}
+                  Live
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="ionicon w-7"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Globe</title>
+                    <path
+                      d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                      strokeWidth="32"
+                    />
+                    <path
+                      d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                      strokeWidth="32"
+                    />
+                    <path
+                      d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="32"
+                    />
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      strokeMiterlimit="10"
+                      strokeWidth="32"
+                      d="M256 48v416M464 256H48"
+                    />
+                  </svg>
+                </button>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* <h1 className="pt-8 text-center  text-3xl leading-none lg:text-5xl">
-          <span className=" text-rose-600"> Personal</span> Projects
+        <h1 className="mb-2 pt-8  text-center text-3xl leading-none lg:text-5xl">
+          <span className=" text-rose-600"> Course</span> Projects
         </h1>
+        <p className="mx-auto pb-3 text-center  text-stone-400">
+          A few of them.
+        </p>
         <div className="grid grid-cols-1 justify-center gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
           <a
             rel="noopener noreferrer"
@@ -142,9 +240,8 @@ const Projects = () => {
                   Single Page E-commerce React App
                 </span>
                 <p>
-                  E-commerce app I created as part of Zero-To-Mastery course on
-                  React. I explored hooks, state-management options, and
-                  Typescript in React. Used Firebase and Stripe (minimally).
+                  E-commerce app exploring hooks, state-management options, and
+                  Typescript in React. Used Firebase and Stripe.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
@@ -187,11 +284,9 @@ const Projects = () => {
                 </h3>
                 <span className="text-xs  text-stone-400">Landing Page</span>
                 <p>
-                  Fully responsive static landing page I built as part of a
-                  Udemy course on CSS/HTML. Custom styles using CSS flex, grid.
-                  On the course I created and followed a design system, applied
-                  design fundamentals including typography, color theory, and
-                  accessibility.
+                  Fully responsive static landing page. Custom styles using CSS
+                  flex, grid. Applies a design system and fundamentals including
+                  typography, color theory, and accessibility.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
@@ -234,8 +329,8 @@ const Projects = () => {
                   Recipe Search App
                 </span>
                 <p>
-                  Recipe searching/bookmarking app as part of Udemy course on
-                  Advanced JS, using vanilla JS and MVC architecture.
+                  Recipe searching/bookmarking app using vanilla JS and MVC
+                  architecture.
                 </p>
               </div>
               <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
@@ -251,7 +346,7 @@ const Projects = () => {
               </div>
             </div>
           </a>
-        </div> */}
+        </div>
         <div className="flex justify-center"></div>
       </div>
     </section>
