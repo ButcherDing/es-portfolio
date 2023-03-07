@@ -41,8 +41,9 @@ const About = () => {
       {!isShowing && (
         <p className="mb-5 text-lg">
           Former international teacher, environmental social-scientist, and
-          language-guy turned coder. I love learning, coding, building. I aim to
-          put my skills to use for sustainability, education, and fun.
+          language-enthusiast turned coder. I love learning, making things, and
+          doing work that matters. I aim to put my skills to use for education,
+          sustainability, and fun.
         </p>
       )}
       <div
@@ -77,7 +78,7 @@ const About = () => {
       {isShowing && (
         <>
           <p className="mb-5 text-lg">
-            {`I used to travel the world and teach English, in far-flung places like Japan, the UAE, and Central America. I learned a lot about different cultures, different people's ways of working, living, and communicating. I've always loved languages, and learned Spanish, French, and Japanese along the way. 
+            {`I used to travel the world and teach English, in far-flung places like Japan, the UAE, and Central America. I learned a lot about the different ways we work, live, communicate, and think. I've always loved languages, and learned Spanish, French, and Japanese along the way. 
         `}
           </p>
           <p className="mb-5 text-lg">
@@ -87,7 +88,7 @@ const About = () => {
         `}
           </p>
           <p className="mb-5 text-lg">
-            {` While I loved doing research, I had an urge to create. I really fell in love with web development, and now I can hardly go a day without doing some form of coding. I see so much unrealised opportunity to better leverage tech to help people and planet, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can bring value to a team.
+            {` While I loved doing research and teaching, I had an urge to create things that people would use every day. I really fell in love with web development, and now I can hardly go a day without doing some form of coding. I see so much unrealised opportunity to better leverage tech to improve our situation, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can bring value to a team, hopefully one that works towards these aims.
         `}
           </p>
         </>
