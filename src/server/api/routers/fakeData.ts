@@ -1,17 +1,17 @@
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "../trpc";
 
-export const exerciseDataRouter = createTRPCRouter({
+export const fakeDataRouter = createTRPCRouter({
   getAll: publicProcedure.query(({ ctx }) => {
-    // try {
-    return ctx.prisma.exerciseData.findMany({
+    try {
+    return ctx.prisma.fakeData.findMany({
       select: {
         data: true,
       },
     });
-    // } catch (error) {
-    //   console.log("error with getAll", error);
-    // }
+    } catch (error) {
+      console.log("error with getAll", error);
+    }
   }),
   //   create: protectedProcedure
   //     .input(

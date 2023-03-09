@@ -1,7 +1,7 @@
-import Navbar from "../../features/navbar/navbar.component";
-import Content from "../../features/codenotes/content.component";
+import Navbar from "../features/navbar/navbar.component";
+import Content from "../features/codenotes/content.component";
 import { useState } from "react";
-import ExerciseOne from "../../features/exercises/exercise-one/exercise-one.component";
+import ExerciseOne from "../features/exercises/exercise-one/exercise-one.component";
 import Link from "next/link";
 
 const Notetaker = () => {

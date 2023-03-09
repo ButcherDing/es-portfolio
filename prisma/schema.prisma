@@ -87,7 +87,7 @@ model Note {
   topic     Topic    @relation(fields: [topicId], references: [id])
 }
 
-model ExerciseData {
+model FakeData {
   id   String   @id @default(cuid())
   name String
   data String[]

@@ -42,7 +42,7 @@ const ExerciseOne = () => {
 
   console.log("rerender");
 
-  const { data: exerciseData, isLoading } = api.exerciseData.getAll.useQuery();
+  const { data: fakeData, isLoading } = api.fakeData.getAll.useQuery();
 
   const signal = controller.signal;
 
@@ -61,7 +61,7 @@ const ExerciseOne = () => {
           onChange={onChangeHandler}
         />
         <div>
-          {exerciseData?.map((exercise) =>
+          {fakeData?.map((exercise) =>
             exercise.data
               .filter((string) =>
                 string.toLowerCase().includes(debounceValue.toLowerCase())

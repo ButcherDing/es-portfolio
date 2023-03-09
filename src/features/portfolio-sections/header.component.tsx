@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Dropdown from "../features/dropdown/dropdown.component";
+import Dropdown from "../dropdown/dropdown.component";
 import esLogo from "../images/es-logo.png";
 
 const Header = () => {
