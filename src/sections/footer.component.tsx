@@ -16,8 +16,8 @@ const Footer = () => {
             <li>Contact</li>
           </a>
         </ul>
-        <div className="flex flex-col justify-center pt-6 lg:pt-0">
-          <div className="space-x-4 text-lg text-stone-500">
+        <div className="mt-5 flex flex-col justify-center pt-6 lg:pt-0">
+          <div className="space-x-4 text-center text-lg text-stone-500">
             <p>
               Built with &nbsp;
               <a

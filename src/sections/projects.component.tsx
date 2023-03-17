@@ -46,7 +46,7 @@ const Projects = () => {
                 className=""
                 href="https://github.com/ButcherDing/ines-chuaqui"
               >
-                <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                <button className=" flex w-28 items-center justify-around border border-stone-700  py-3  text-stone-50">
                   Source
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 href="https://ines-chuaqui-preview.netlify.app/"
               >
-                <button className=" flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                <button className=" flex w-28 items-center justify-around border border-stone-700  py-3  text-stone-50">
                   {" "}
                   Live
                   <svg
@@ -144,7 +144,7 @@ const Projects = () => {
                 className=""
                 href="https://github.com/ButcherDing/es-portfolio"
               >
-                <button className="flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                <button className="flex w-28 items-center justify-around border border-stone-700  py-3  text-stone-50">
                   Source
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@ const Projects = () => {
                 </button>
               </a>
               <a href="#">
-                <button className=" flex w-40 items-center justify-around border border-stone-700  py-3  text-stone-50">
+                <button className=" flex w-28 items-center justify-around border border-stone-700  py-3  text-stone-50">
                   {" "}
                   Live
                   <svg
