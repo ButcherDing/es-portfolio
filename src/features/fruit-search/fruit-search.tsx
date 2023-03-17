@@ -48,7 +48,7 @@ const ExerciseOne = () => {
   };
 
   return (
-    <section className="flex h-screen w-full flex-col items-center gap-5 lg:flex-row lg:justify-center">
+    <section className="flex h-screen w-full flex-col items-center gap-5 lg:flex-row lg:items-start lg:justify-center">
       <div className="justify-top mt-5 flex flex-col items-center gap-5">
         <h1 className="text-lg font-bold">🍓 FRUIT SEARCH ( Debounced 🏀 ) </h1>
         <input
