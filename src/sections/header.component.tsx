@@ -58,7 +58,7 @@ const Header = () => {
           <li className="flex">
             <Link
               rel="noopener noreferrer"
-              href="/notetaker/notetaker"
+              href="/experimental-zone"
               className="flex items-center border-b-2 border-transparent px-4 py-1 hover:border-rose-600  hover:text-rose-600 "
             >
               Experimental Mystery Zone.

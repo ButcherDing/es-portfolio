@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
-import { api } from "../../../utils/api";
+import { api } from "../../utils/api";
 
 const fakeApi = (query: string, signal?: AbortSignal): Promise<string[]> => {
   const fruits = ["apple", "banana", "mango", "papaya", "raspberry"];
@@ -38,22 +38,19 @@ const ExerciseOne = () => {
   const [fruits, setFruits] = useState([]);
   const [searchField, setSearchField] = useState("");
   const debounceValue = useDebounceValue(searchField);
-  // const controller = new AbortController();
 
-  console.log("rerender");
+  const { data: fruitEntries, isLoading } = api.fruits.getAll.useQuery();
 
-  // const { data: exerciseData, isLoading } = api.exerciseData.getAll.useQuery();
-
-  // const signal = controller.signal;
+  console.log(fruitEntries);
 
   const onChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => {
     setSearchField(event.target.value);
   };
 
   return (
-    <section className="flex h-screen w-full flex-col items-center">
-      <div className="mt-5 flex flex-col items-center justify-center gap-5">
-        <h1 id="heading-1">Exercise 1</h1>
+    <section className="flex h-screen w-full flex-col items-center gap-5 lg:flex-row lg:justify-center">
+      <div className="justify-top mt-5 flex flex-col items-center gap-5">
+        <h1 className="text-lg font-bold">🍓 FRUIT SEARCH ( Debounced 🏀 ) </h1>
         <input
           type="search"
           placeholder="Filter fruit"
@@ -61,19 +58,27 @@ const ExerciseOne = () => {
           onChange={onChangeHandler}
         />
         <div>
-          {/* {exerciseData?.map((exercise) =>
-            exercise.data
-              .filter((string) =>
-                string.toLowerCase().includes(debounceValue.toLowerCase())
-              )
-              .map((string, i) => (
-                <p className="" key={string + `${i}`}>
-                  {string}
-                </p>
-              ))
-          )} */}
+          {fruitEntries
+            ?.map(({ name }) => name)
+            .filter((string) =>
+              string.toLowerCase().includes(debounceValue.toLowerCase())
+            )
+            .map((string, i) => (
+              <p className="" key={string + `${i}`}>
+                {string}
+              </p>
+            ))}
         </div>
       </div>
+      {/* <div className="justify-top mt-5 flex flex-col items-center gap-5">
+        <h1 id="heading-1">Add Fruit</h1>
+        <input
+          type="search"
+          placeholder="Name a fruit"
+          className="input-bordered input-secondary input w-full max-w-xs"
+          onChange={onChangeHandler}
+        />
+      </div> */}
     </section>
   );
 };

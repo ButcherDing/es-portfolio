@@ -95,7 +95,7 @@ model Banana {
 }
 
 model Fruits {
-  id   String   @id
+  id   String   @id @default(cuid())
   name String
   data String[]
 }

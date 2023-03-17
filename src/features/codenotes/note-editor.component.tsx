@@ -51,6 +51,10 @@ export const NoteEditor = ({
         />
       </div>
       <div className="card-actions justify-end">
+        {/* <div
+          className="tooltip-left tooltip"
+          data-tip="sign in and enter a title to save your notes"
+        > */}
         <button
           onClick={() => {
             onSave({
@@ -60,11 +64,12 @@ export const NoteEditor = ({
             setCode("");
             setTitle("");
           }}
-          className="btn btn-primary"
+          className="btn-primary btn"
           disabled={title.trim().length === 0 || code.trim().length === 0}
         >
           Save
         </button>
+        {/* </div> */}
       </div>
     </div>
   );

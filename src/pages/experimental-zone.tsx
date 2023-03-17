@@ -1,10 +1,10 @@
-import Navbar from "../../features/navbar/navbar.component";
-import Content from "../../features/codenotes/content.component";
+import Navbar from "../features/navbar/navbar.component";
+import Content from "../features/codenotes/content.component";
 import { useState } from "react";
-import ExerciseOne from "../../features/exercises/exercise-one/exercise-one.component";
+import ExerciseOne from "../features/fruit-search/fruit-search";
 import Link from "next/link";
 
-const Notetaker = () => {
+const ExperimentalZone = () => {
   const [curTab, setCurTab] = useState(1);
 
   const tabHandler = (tabNum: number) => {
@@ -31,7 +31,7 @@ const Notetaker = () => {
             onClick={() => tabHandler(3)}
             className={`tab ${curTab === 3 ? "tab-active" : ""}`}
           >
-            Creative
+            About
           </a>
           <Link className="link ml-auto px-3" href="/">
             Back to Normie World
@@ -49,13 +49,18 @@ const Notetaker = () => {
           </>
         )}
         {curTab === 3 && (
-          <>
-            <h1 className="prose-headings">In Progress</h1>
-          </>
+          <div className="prose mx-8 my-5">
+            <h1 className="">Wat this?</h1>
+            <p>
+              The experimental zone is a playground for learning and shenanigans
+              using DaisyUI, Tailwind, tRPC, Prisma, PostgresQL, Next, NextAuth,
+              React Query, etc etc...
+            </p>
+          </div>
         )}
       </div>
     </>
   );
 };
 
-export default Notetaker;
+export default ExperimentalZone;

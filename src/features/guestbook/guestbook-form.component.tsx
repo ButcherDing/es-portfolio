@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
-import { api } from "../../../utils/api";
+import { api } from "../../utils/api";
 
 const GuestbookForm = () => {
   const [message, setMessage] = useState("");

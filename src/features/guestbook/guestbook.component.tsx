@@ -1,7 +1,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import GuestbookForm from "./guestbook-form/guestbook-form.component";
-import GuestbookEntries from "./guestbook-entries/guestbook-entries.component";
+import GuestbookForm from "./guestbook-form.component";
+import GuestbookEntries from "./guestbook-entries.component";
 
 const Guestbook = () => {
   const { data: session, status } = useSession();

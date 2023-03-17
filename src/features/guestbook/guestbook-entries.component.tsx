@@ -1,5 +1,5 @@
 // import { useQuery } from "@tanstack/react-query";
-import { api } from "../../../utils/api";
+import { api } from "../../utils/api";
 
 const GuestbookEntries = () => {
   const { data: guestbookEntries, isLoading } = api.guestbook.getAll.useQuery();
