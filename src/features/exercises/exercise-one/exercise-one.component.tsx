@@ -38,13 +38,13 @@ const ExerciseOne = () => {
   const [fruits, setFruits] = useState([]);
   const [searchField, setSearchField] = useState("");
   const debounceValue = useDebounceValue(searchField);
-  const controller = new AbortController();
+  // const controller = new AbortController();
 
   console.log("rerender");
 
-  const { data: exerciseData, isLoading } = api.exerciseData.getAll.useQuery();
+  // const { data: exerciseData, isLoading } = api.exerciseData.getAll.useQuery();
 
-  const signal = controller.signal;
+  // const signal = controller.signal;
 
   const onChangeHandler = (event: ChangeEvent<HTMLInputElement>): void => {
     setSearchField(event.target.value);
@@ -61,7 +61,7 @@ const ExerciseOne = () => {
           onChange={onChangeHandler}
         />
         <div>
-          {exerciseData?.map((exercise) =>
+          {/* {exerciseData?.map((exercise) =>
             exercise.data
               .filter((string) =>
                 string.toLowerCase().includes(debounceValue.toLowerCase())
@@ -71,7 +71,7 @@ const ExerciseOne = () => {
                   {string}
                 </p>
               ))
-          )}
+          )} */}
         </div>
       </div>
     </section>

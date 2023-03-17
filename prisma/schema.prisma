@@ -87,15 +87,15 @@ model Note {
   topic     Topic    @relation(fields: [topicId], references: [id])
 }
 
-model ExerciseData {
-  id   String   @id @default(cuid())
-  name String
-  data String[]
-}
-
 model Banana {
   id        String   @id @default(cuid())
   createdAt DateTime @default(now())
   name      String
   message   String   @db.VarChar(100)
+}
+
+model Fruits {
+  id   String   @id
+  name String
+  data String[]
 }

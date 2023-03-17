@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex-1 pl-5 text-3xl font-bold">
         {sessionData?.user?.name
           ? `Codenotes for ${sessionData.user.name}`
-          : "Sign in for codenotes"}
+          : "Sign in to get started"}
       </div>
       <div className="flex-none gap-2">
         <div className="dropdown-end dropdown">
