@@ -35,7 +35,6 @@ const useDebounceValue = (value: string, time = 300) => {
 };
 
 const ExerciseOne = () => {
-  const [fruits, setFruits] = useState([]);
   const [searchField, setSearchField] = useState("");
   const debounceValue = useDebounceValue(searchField);
 
