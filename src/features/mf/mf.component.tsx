@@ -1,4 +1,4 @@
-import { isDisabled } from "@testing-library/user-event/dist/types/utils";
+
 import { useState } from "react";
 
 const MF = () => {
@@ -37,7 +37,7 @@ const MF = () => {
       </div>
       <div className="form-control">
         <label className="input-group-lg input-group">
-          <span>LG</span>
+          <span>email</span>
           <input
             type="text"
             placeholder="Type here"
@@ -47,7 +47,7 @@ const MF = () => {
       </div>
       <div className="form-control">
         <label className="input-group-lg input-group">
-          <span>LG</span>
+          <span>message</span>
           <input
             type="text"
             placeholder="Type here"
