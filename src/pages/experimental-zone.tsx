@@ -3,6 +3,7 @@ import Content from "../features/codenotes/content.component";
 import { useState } from "react";
 import ExerciseOne from "../features/fruit-search/fruit-search";
 import Link from "next/link";
+import MF from "../sections/mf.component";
 
 const ExperimentalZone = () => {
   const [curTab, setCurTab] = useState(1);
@@ -33,6 +34,12 @@ const ExperimentalZone = () => {
           >
             About
           </a>
+          <a
+            onClick={() => tabHandler(4)}
+            className={`tab ${curTab === 4 ? "tab-active" : ""}`}
+          >
+            MF
+          </a>
           <Link className="link ml-auto px-3" href="/">
             Back to Normie World
           </Link>
@@ -58,6 +65,7 @@ const ExperimentalZone = () => {
             </p>
           </div>
         )}
+        {curTab === 4 && <MF />}
       </div>
     </>
   );
