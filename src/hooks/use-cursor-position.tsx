@@ -1,35 +1,31 @@
-import { MutableRefObject, useEffect, useState } from "react";
+import type { MutableRefObject } from "react";
+import { useEffect, useState } from "react";
 
- 
+const useCursorPosition = (ref: MutableRefObject<HTMLDivElement | null>) => {
+  const [y, setY] = useState(0);
+  const [x, setX] = useState(0);
 
-const useCursorPosition = (ref:MutableRefObject<HTMLDivElement | null>) => {
-
-  const [y, setY] = useState(0)
-  const [x, setX] = useState(0)
-
-  
-  useEffect(()=> {
+  useEffect(() => {
     const listener = (e: MouseEvent) => {
-      if (ref === null) return
+      if (ref === null) return;
       if (ref.current) {
-        const rect = ref.current.getBoundingClientRect()
-        setY(e.clientY - rect.top)
-        setX(e.clientX - rect.left)
+        const rect = ref.current.getBoundingClientRect();
+        setY(e.clientY - rect.top);
+        setX(e.clientX - rect.left);
       }
-    }
+    };
 
-    window.addEventListener('mousemove', listener)
+    window.addEventListener("mousemove", listener);
 
-    return () => window.removeEventListener('mousemove', listener)
-    
-  }, [ref])
-  
+    return () => window.removeEventListener("mousemove", listener);
+  }, [ref]);
+
   return {
     y,
     x,
     setY,
     setX,
-  }
+  };
 };
 
 export default useCursorPosition;

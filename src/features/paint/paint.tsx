@@ -1,6 +1,6 @@
 import useCursorPosition from "../../hooks/use-cursor-position";
-import { FC, Ref, useRef } from "react";
-import { useState } from "react";
+import type { FC } from "react";
+import { useState, useRef } from "react";
 
 type PaintBlobProps = {
   coords: [number, number];
@@ -23,7 +23,6 @@ const PaintBlob: FC<PaintBlobProps> = ({ coords, paintString }) => {
 
 const Paint = () => {
   const [inputString, setInputString] = useState("hello");
-  const [inputColor, setInputColor] = useState("black")
 
   const [coords, setCoords] = useState([[0, 0]]);
   const [paintStrings, setPaintStrings] = useState([""]);
