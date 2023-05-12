@@ -34,7 +34,7 @@ const useDebounceValue = (value: string, time = 300) => {
   return debounceValue;
 };
 
-const ExerciseOne = () => {
+const FruitSearch = () => {
   const [searchField, setSearchField] = useState("");
   const debounceValue = useDebounceValue(searchField);
 
@@ -82,4 +82,4 @@ const ExerciseOne = () => {
   );
 };
 
-export default ExerciseOne;
+export default FruitSearch;

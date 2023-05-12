@@ -1,7 +1,7 @@
 import Navbar from "../features/navbar/navbar.component";
 import Content from "../features/codenotes/content.component";
 import { useState } from "react";
-import ExerciseOne from "../features/fruit-search/fruit-search";
+import FruitSearch from "../features/fruit-search/fruit-search";
 import Link from "next/link";
 import MF from "../features/mf/mf.component";
 import DomTree from "../features/dom-tree/dom-tree";
@@ -66,7 +66,7 @@ const ExperimentalZone = () => {
         )}
         {curTab === 2 && (
           <>
-            <ExerciseOne />
+            <FruitSearch />
           </>
         )}
         {curTab === 3 && <MF />}
