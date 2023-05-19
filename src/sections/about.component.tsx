@@ -40,15 +40,15 @@ const About = () => {
       </div>
       {!isShowing && (
         <p className="mb-5 text-lg">
-          Former international teacher, environmental social-scientist, and
-          language-enthusiast turned coder. I love learning, making things, and
-          doing work that matters. I aim to put my skills to use for education,
-          sustainability, and fun.
+          International teacher, environmental social-scientist, and
+          language-enthusiast turned coder. I love learning, teaching, making
+          things, and doing work that matters. I aim to put my skills to use for
+          education, sustainability, and fun.
         </p>
       )}
       <div
         onClick={handleClick}
-        className="flex items-center hover:cursor-pointer"
+        className="mt-5 flex items-center hover:cursor-pointer"
       >
         <div
           onClick={handleClick}
@@ -78,17 +78,17 @@ const About = () => {
       {isShowing && (
         <>
           <p className="mb-5 text-lg">
-            {`I used to travel the world and teach English, in far-flung places like Japan, the UAE, and Central America. I learned a lot about the different ways we work, live, communicate, and think. I've always loved languages, and learned Spanish, French, and Japanese along the way. 
+            {`I used to travel the world and teach English, in far-flung places like Japan, the UAE, and Central America. I loved observing and experienced the different ways we work, live, communicate, and think. This includes language, and I learned Spanish, French, and Japanese along the way.
         `}
           </p>
           <p className="mb-5 text-lg">
             {` Later I pursued a longstanding passion for
         sustainability, and became a social scientist looking at environmental
-        issues, particularly surrounding people's values. 
+        issues, particularly surrounding people's values.
         `}
           </p>
           <p className="mb-5 text-lg">
-            {` While I loved doing research and teaching, I had an urge to create things that people would use every day. I really fell in love with web development, and now I can hardly go a day without doing some form of coding. I see so much unrealised opportunity to better leverage tech to improve our situation, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can bring value to a team, hopefully one that works towards these aims.
+            {` While I loved research and teaching, I had an urge to bring my vision into the world, to create things that people would use every day. I fell in love with web development, and now I can hardly go a day without doing some form of coding. In tech I see so much unrealised opportunity to better leverage tech to improve our situation, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can work towards these goals alongside a team of passionate, experienced developers.
         `}
           </p>
         </>

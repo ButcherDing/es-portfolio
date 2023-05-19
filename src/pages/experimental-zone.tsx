@@ -16,7 +16,7 @@ const ExperimentalZone = () => {
 
   return (
     <>
-      <div data-theme="cyberpunk" className=" h-screen ">
+      <div data-theme="cyberpunk" className="h-screen">
         <div className="tabs tabs-boxed">
           <a
             onClick={() => tabHandler(1)}

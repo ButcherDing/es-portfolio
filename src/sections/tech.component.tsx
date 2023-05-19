@@ -31,14 +31,15 @@ export const Tech = () => {
           <p>
             <strong className=" text-stone-300">Testing</strong>
           </p>
-          <p className="mb-6 text-stone-300"> Jest | React Testing Library</p>
+          <p className="mb-6 text-stone-300"> Jest | React Testing Library </p>
           <p>
-            <strong className=" text-stone-300">Other Tools</strong>
+            <strong className=" text-stone-300">Other</strong>
           </p>
           <p className="mb-6 text-stone-300">
             {" "}
-            Git | GitHub | Jest | React Testing Library | PostgresQL | GraphQL |
-            Netlify | Vercel | Firebase | Stripe | NextAuth.js | Prisma | tRPC
+            Astro | Strapi | Git | GitHub | PostgresQL | GraphQL | Netlify |
+            Vercel | Firebase | Stripe | NextAuth.js | Prisma | tRPC |
+            serverless
           </p>
           <p>* * *</p>
         </div>
