@@ -88,7 +88,7 @@ const About = () => {
         `}
           </p>
           <p className="mb-5 text-lg">
-            {` While I loved research and teaching, I had an urge to bring my vision into the world, to create things that people would use every day. I fell in love with web development, and now I can hardly go a day without doing some form of coding. In tech I see so much unrealised opportunity to better leverage tech to improve our situation, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can work towards these goals alongside a team of passionate, experienced developers.
+            {` While I loved research and teaching, I had an urge to create, and bring things into the world that people would use every day. I fell in love with web development, and now I can hardly go a day without doing some form of coding. In tech I see so much unrealised opportunity to better leverage tech to improve our situation, particularly in the areas of sustainability and education. At this stage I've worked on various complex personal and freelancing projects, and am currently looking for a more permanent role where I can work towards these goals alongside a team of passionate, experienced developers.
         `}
           </p>
         </>
