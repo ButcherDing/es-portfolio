@@ -8,7 +8,7 @@ export const Tech = () => {
             {" "}
             <strong>
               {" "}
-              React | TypeScript | JavaScript| HTML | CSS | Node.js
+              React | TypeScript | JavaScript <br /> HTML | CSS | Node.js
             </strong>
           </p>
           <p className=" text-stone-300">
