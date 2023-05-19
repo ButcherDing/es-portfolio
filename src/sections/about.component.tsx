@@ -12,7 +12,7 @@ const About = () => {
       <h2 className="pb-5 text-3xl">About Me</h2>
       <div
         onClick={handleClick}
-        className=" flex items-center hover:cursor-pointer"
+        className="mb-3 flex items-center hover:cursor-pointer"
       >
         <div
           className={
@@ -48,7 +48,7 @@ const About = () => {
       )}
       <div
         onClick={handleClick}
-        className="mt-5 flex items-center hover:cursor-pointer"
+        className="mt-8 mb-3 flex items-center hover:cursor-pointer"
       >
         <div
           onClick={handleClick}
