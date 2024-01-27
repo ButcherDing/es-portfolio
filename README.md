@@ -1,4 +1,4 @@
-## Evon's incomplete fullstack portfolio site.
+## Evon's fullstack portfolio site.
 
 Uses create-t3-app
 
